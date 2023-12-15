@@ -1,0 +1,18 @@
+﻿<UserControl
+    x:Class="Science_Solver.View.Integral"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:Science_Solver.View"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:vm="clr-namespace:Science_Solver.ViewModel"
+    d:DesignHeight="600"
+    d:DesignWidth="622"
+    Style="{StaticResource Page_Style}"
+    mc:Ignorable="d">
+    <Grid Margin="15">
+        <Border Background="#37474f" CornerRadius="0 20 20 0" />
+        <Grid />
+    </Grid>
+
+</UserControl>

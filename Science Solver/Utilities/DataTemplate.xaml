@@ -1,0 +1,106 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:view="clr-namespace:Science_Solver.View"
+    xmlns:vm="clr-namespace:Science_Solver.ViewModel">
+
+    <DataTemplate DataType="{x:Type vm:HomeVM}">
+        <view:Home />
+    </DataTemplate>
+
+    <DataTemplate DataType="{x:Type vm:AppVM}">
+        <view:App />
+    </DataTemplate>
+
+    <DataTemplate DataType="{x:Type vm:IntroductionVM}">
+        <view:Introduction />
+    </DataTemplate>
+
+
+    <!--  Mathematical  -->
+
+    <DataTemplate DataType="{x:Type vm:CalculatorVM}">
+        <view:Calculator />
+    </DataTemplate>
+
+    <DataTemplate DataType="{x:Type vm:MatrixVM}">
+        <view:Matrix />
+    </DataTemplate>
+
+    <DataTemplate DataType="{x:Type vm:IntegralVM}">
+        <view:Integral />
+    </DataTemplate>
+
+    <DataTemplate DataType="{x:Type vm:MathematicalFormulaVM}">
+        <view:MathematicalFormula />
+    </DataTemplate>
+
+    <DataTemplate DataType="{x:Type vm:MathematicalTheoremVM}">
+        <view:MathematicalTheorem />
+    </DataTemplate>
+
+    <DataTemplate DataType="{x:Type vm:Degree1VM}">
+        <view:Degree1 />
+    </DataTemplate>
+
+    <DataTemplate DataType="{x:Type vm:Degree2VM}">
+        <view:Degree2 />
+    </DataTemplate>
+
+    <DataTemplate DataType="{x:Type vm:Degree3VM}">
+        <view:Degree3 />
+    </DataTemplate>
+
+    <DataTemplate DataType="{x:Type vm:Degree4VM}">
+        <view:Degree4 />
+    </DataTemplate>
+
+    <DataTemplate DataType="{x:Type vm:Step2VM}">
+        <view:Step2 />
+    </DataTemplate>
+
+    <DataTemplate DataType="{x:Type vm:Step3VM}">
+        <view:Step3 />
+    </DataTemplate>
+
+    <DataTemplate DataType="{x:Type vm:Step4VM}">
+        <view:Step4 />
+    </DataTemplate>
+
+    <!--  Physical  -->
+    <DataTemplate DataType="{x:Type vm:PhysicalConstantVM}">
+        <view:PhysicalConstant />
+    </DataTemplate>
+
+    <DataTemplate DataType="{x:Type vm:PhysicalFormulaVM}">
+        <view:PhysicalFormula />
+    </DataTemplate>
+
+    <DataTemplate DataType="{x:Type vm:PhysicalLawVM}">
+        <view:PhysicalLaw />
+    </DataTemplate>
+
+    <DataTemplate DataType="{x:Type vm:PhysicalUnitsVM}">
+        <view:PhysicalUnits />
+    </DataTemplate>
+
+    <!--  Chemistry  -->
+
+    <DataTemplate DataType="{x:Type vm:ChemicalElementVM}">
+        <view:ChemicalElement />
+    </DataTemplate>
+
+    <DataTemplate DataType="{x:Type vm:ChemicalConstantVM}">
+        <view:ChemicalConstant />
+    </DataTemplate>
+
+    <DataTemplate DataType="{x:Type vm:ChemicalEquationVM}">
+        <view:ChemicalEquation />
+    </DataTemplate>
+
+    <DataTemplate DataType="{x:Type vm:ChemicalLawVM}">
+        <view:ChemicalLaw />
+    </DataTemplate>
+
+
+</ResourceDictionary>

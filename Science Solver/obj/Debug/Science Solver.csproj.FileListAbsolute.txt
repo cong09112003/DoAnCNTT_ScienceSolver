@@ -1,0 +1,257 @@
+C:\Data\DoAnCNTT\Science Solver\obj\Debug\Science Solver.csproj.AssemblyReference.cache
+C:\Data\DoAnCNTT\Science Solver\obj\Debug\Styles\Button.baml
+C:\Data\DoAnCNTT\Science Solver\obj\Debug\Styles\Image.baml
+C:\Data\DoAnCNTT\Science Solver\obj\Debug\Styles\Page.baml
+C:\Data\DoAnCNTT\Science Solver\obj\Debug\Styles\Templates.baml
+C:\Data\DoAnCNTT\Science Solver\obj\Debug\Styles\Text.baml
+C:\Data\DoAnCNTT\Science Solver\obj\Debug\MainWindow.g.cs
+C:\Data\DoAnCNTT\Science Solver\obj\Debug\OtherForms\Matrix1.g.cs
+C:\Data\DoAnCNTT\Science Solver\obj\Debug\View\App.g.cs
+C:\Data\DoAnCNTT\Science Solver\obj\Debug\View\Calculator.g.cs
+C:\Data\DoAnCNTT\Science Solver\obj\Debug\View\ChemicalConstant.g.cs
+C:\Data\DoAnCNTT\Science Solver\obj\Debug\View\ChemicalElement.g.cs
+C:\Data\DoAnCNTT\Science Solver\obj\Debug\View\ChemicalEquation.g.cs
+C:\Data\DoAnCNTT\Science Solver\obj\Debug\View\ChemicalLaw.g.cs
+C:\Data\DoAnCNTT\Science Solver\obj\Debug\View\Degree1.g.cs
+C:\Data\DoAnCNTT\Science Solver\obj\Debug\View\Degree2.g.cs
+C:\Data\DoAnCNTT\Science Solver\obj\Debug\View\Degree3.g.cs
+C:\Data\DoAnCNTT\Science Solver\obj\Debug\View\Degree4.g.cs
+C:\Data\DoAnCNTT\Science Solver\obj\Debug\View\Home.g.cs
+C:\Data\DoAnCNTT\Science Solver\obj\Debug\View\Integral.g.cs
+C:\Data\DoAnCNTT\Science Solver\obj\Debug\View\Introduction.g.cs
+C:\Data\DoAnCNTT\Science Solver\obj\Debug\View\MathematicalFormula.g.cs
+C:\Data\DoAnCNTT\Science Solver\obj\Debug\View\MathematicalTheorem.g.cs
+C:\Data\DoAnCNTT\Science Solver\obj\Debug\View\Matrix.g.cs
+C:\Data\DoAnCNTT\Science Solver\obj\Debug\View\PhysicalConstant.g.cs
+C:\Data\DoAnCNTT\Science Solver\obj\Debug\View\PhysicalFormula.g.cs
+C:\Data\DoAnCNTT\Science Solver\obj\Debug\View\PhysicalLaw.g.cs
+C:\Data\DoAnCNTT\Science Solver\obj\Debug\View\PhysicalUnits.g.cs
+C:\Data\DoAnCNTT\Science Solver\obj\Debug\View\Step2.g.cs
+C:\Data\DoAnCNTT\Science Solver\obj\Debug\View\Step3.g.cs
+C:\Data\DoAnCNTT\Science Solver\obj\Debug\View\Step4.g.cs
+C:\Data\DoAnCNTT\Science Solver\obj\Debug\App.g.cs
+C:\Data\DoAnCNTT\Science Solver\obj\Debug\Science Solver_Content.g.cs
+C:\Data\DoAnCNTT\Science Solver\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Data\DoAnCNTT\Science Solver\obj\Debug\Science Solver_MarkupCompile.cache
+C:\Data\DoAnCNTT\Science Solver\obj\Debug\Science Solver_MarkupCompile.lref
+C:\Data\DoAnCNTT\Science Solver\obj\Debug\App.baml
+C:\Data\DoAnCNTT\Science Solver\obj\Debug\MainWindow.baml
+C:\Data\DoAnCNTT\Science Solver\obj\Debug\OtherForms\Matrix1.baml
+C:\Data\DoAnCNTT\Science Solver\obj\Debug\View\App.baml
+C:\Data\DoAnCNTT\Science Solver\obj\Debug\View\Calculator.baml
+C:\Data\DoAnCNTT\Science Solver\obj\Debug\View\ChemicalConstant.baml
+C:\Data\DoAnCNTT\Science Solver\obj\Debug\View\ChemicalElement.baml
+C:\Data\DoAnCNTT\Science Solver\obj\Debug\View\ChemicalEquation.baml
+C:\Data\DoAnCNTT\Science Solver\obj\Debug\View\ChemicalLaw.baml
+C:\Data\DoAnCNTT\Science Solver\obj\Debug\View\Degree1.baml
+C:\Data\DoAnCNTT\Science Solver\obj\Debug\View\Degree2.baml
+C:\Data\DoAnCNTT\Science Solver\obj\Debug\View\Degree3.baml
+C:\Data\DoAnCNTT\Science Solver\obj\Debug\View\Degree4.baml
+C:\Data\DoAnCNTT\Science Solver\obj\Debug\View\Home.baml
+C:\Data\DoAnCNTT\Science Solver\obj\Debug\View\Integral.baml
+C:\Data\DoAnCNTT\Science Solver\obj\Debug\View\Introduction.baml
+C:\Data\DoAnCNTT\Science Solver\obj\Debug\View\MathematicalFormula.baml
+C:\Data\DoAnCNTT\Science Solver\obj\Debug\View\MathematicalTheorem.baml
+C:\Data\DoAnCNTT\Science Solver\obj\Debug\View\Matrix.baml
+C:\Data\DoAnCNTT\Science Solver\obj\Debug\View\PhysicalConstant.baml
+C:\Data\DoAnCNTT\Science Solver\obj\Debug\View\PhysicalFormula.baml
+C:\Data\DoAnCNTT\Science Solver\obj\Debug\View\PhysicalLaw.baml
+C:\Data\DoAnCNTT\Science Solver\obj\Debug\View\PhysicalUnits.baml
+C:\Data\DoAnCNTT\Science Solver\obj\Debug\View\Step2.baml
+C:\Data\DoAnCNTT\Science Solver\obj\Debug\View\Step3.baml
+C:\Data\DoAnCNTT\Science Solver\obj\Debug\View\Step4.baml
+C:\Data\DoAnCNTT\Science Solver\obj\Debug\Science Solver.exe
+C:\Data\DoAnCNTT\Science Solver\obj\Debug\Science Solver.pdb
+C:\Data\DoAnCNTT\21110144_NguyenHuuCong_DoAnCNTT\Science Solver\obj\Debug\Science Solver.csproj.AssemblyReference.cache
+C:\Data\DoAnCNTT\21110144_NguyenHuuCong_DoAnCNTT\Science Solver\obj\Debug\Styles\Button.baml
+C:\Data\DoAnCNTT\21110144_NguyenHuuCong_DoAnCNTT\Science Solver\obj\Debug\Styles\Image.baml
+C:\Data\DoAnCNTT\21110144_NguyenHuuCong_DoAnCNTT\Science Solver\obj\Debug\Styles\Page.baml
+C:\Data\DoAnCNTT\21110144_NguyenHuuCong_DoAnCNTT\Science Solver\obj\Debug\Styles\Templates.baml
+C:\Data\DoAnCNTT\21110144_NguyenHuuCong_DoAnCNTT\Science Solver\obj\Debug\Styles\Text.baml
+C:\Data\DoAnCNTT\21110144_NguyenHuuCong_DoAnCNTT\Science Solver\obj\Debug\MainWindow.g.cs
+C:\Data\DoAnCNTT\21110144_NguyenHuuCong_DoAnCNTT\Science Solver\obj\Debug\OtherForms\Matrix1.g.cs
+C:\Data\DoAnCNTT\21110144_NguyenHuuCong_DoAnCNTT\Science Solver\obj\Debug\View\App.g.cs
+C:\Data\DoAnCNTT\21110144_NguyenHuuCong_DoAnCNTT\Science Solver\obj\Debug\View\Calculator.g.cs
+C:\Data\DoAnCNTT\21110144_NguyenHuuCong_DoAnCNTT\Science Solver\obj\Debug\View\ChemicalConstant.g.cs
+C:\Data\DoAnCNTT\21110144_NguyenHuuCong_DoAnCNTT\Science Solver\obj\Debug\View\ChemicalElement.g.cs
+C:\Data\DoAnCNTT\21110144_NguyenHuuCong_DoAnCNTT\Science Solver\obj\Debug\View\ChemicalEquation.g.cs
+C:\Data\DoAnCNTT\21110144_NguyenHuuCong_DoAnCNTT\Science Solver\obj\Debug\View\ChemicalLaw.g.cs
+C:\Data\DoAnCNTT\21110144_NguyenHuuCong_DoAnCNTT\Science Solver\obj\Debug\View\Degree1.g.cs
+C:\Data\DoAnCNTT\21110144_NguyenHuuCong_DoAnCNTT\Science Solver\obj\Debug\View\Degree2.g.cs
+C:\Data\DoAnCNTT\21110144_NguyenHuuCong_DoAnCNTT\Science Solver\obj\Debug\View\Degree3.g.cs
+C:\Data\DoAnCNTT\21110144_NguyenHuuCong_DoAnCNTT\Science Solver\obj\Debug\View\Degree4.g.cs
+C:\Data\DoAnCNTT\21110144_NguyenHuuCong_DoAnCNTT\Science Solver\obj\Debug\View\Home.g.cs
+C:\Data\DoAnCNTT\21110144_NguyenHuuCong_DoAnCNTT\Science Solver\obj\Debug\View\Integral.g.cs
+C:\Data\DoAnCNTT\21110144_NguyenHuuCong_DoAnCNTT\Science Solver\obj\Debug\View\Introduction.g.cs
+C:\Data\DoAnCNTT\21110144_NguyenHuuCong_DoAnCNTT\Science Solver\obj\Debug\View\MathematicalFormula.g.cs
+C:\Data\DoAnCNTT\21110144_NguyenHuuCong_DoAnCNTT\Science Solver\obj\Debug\View\MathematicalTheorem.g.cs
+C:\Data\DoAnCNTT\21110144_NguyenHuuCong_DoAnCNTT\Science Solver\obj\Debug\View\Matrix.g.cs
+C:\Data\DoAnCNTT\21110144_NguyenHuuCong_DoAnCNTT\Science Solver\obj\Debug\View\PhysicalConstant.g.cs
+C:\Data\DoAnCNTT\21110144_NguyenHuuCong_DoAnCNTT\Science Solver\obj\Debug\View\PhysicalFormula.g.cs
+C:\Data\DoAnCNTT\21110144_NguyenHuuCong_DoAnCNTT\Science Solver\obj\Debug\View\PhysicalLaw.g.cs
+C:\Data\DoAnCNTT\21110144_NguyenHuuCong_DoAnCNTT\Science Solver\obj\Debug\View\PhysicalUnits.g.cs
+C:\Data\DoAnCNTT\21110144_NguyenHuuCong_DoAnCNTT\Science Solver\obj\Debug\View\Step2.g.cs
+C:\Data\DoAnCNTT\21110144_NguyenHuuCong_DoAnCNTT\Science Solver\obj\Debug\View\Step3.g.cs
+C:\Data\DoAnCNTT\21110144_NguyenHuuCong_DoAnCNTT\Science Solver\obj\Debug\View\Step4.g.cs
+C:\Data\DoAnCNTT\21110144_NguyenHuuCong_DoAnCNTT\Science Solver\obj\Debug\App.g.cs
+C:\Data\DoAnCNTT\21110144_NguyenHuuCong_DoAnCNTT\Science Solver\obj\Debug\Science Solver_Content.g.cs
+C:\Data\DoAnCNTT\21110144_NguyenHuuCong_DoAnCNTT\Science Solver\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Data\DoAnCNTT\21110144_NguyenHuuCong_DoAnCNTT\Science Solver\obj\Debug\Science Solver_MarkupCompile.cache
+C:\Data\DoAnCNTT\21110144_NguyenHuuCong_DoAnCNTT\Science Solver\obj\Debug\Science Solver_MarkupCompile.lref
+C:\Data\21110144_NguyenHuuCong_DACNTT\Science Solver\obj\Debug\Science Solver.csproj.AssemblyReference.cache
+C:\Data\21110144_NguyenHuuCong_DACNTT\Science Solver\obj\Debug\Styles\Button.baml
+C:\Data\21110144_NguyenHuuCong_DACNTT\Science Solver\obj\Debug\Styles\Image.baml
+C:\Data\21110144_NguyenHuuCong_DACNTT\Science Solver\obj\Debug\Styles\Page.baml
+C:\Data\21110144_NguyenHuuCong_DACNTT\Science Solver\obj\Debug\Styles\Templates.baml
+C:\Data\21110144_NguyenHuuCong_DACNTT\Science Solver\obj\Debug\Styles\Text.baml
+C:\Data\21110144_NguyenHuuCong_DACNTT\Science Solver\obj\Debug\MainWindow.g.cs
+C:\Data\21110144_NguyenHuuCong_DACNTT\Science Solver\obj\Debug\OtherForms\Matrix1.g.cs
+C:\Data\21110144_NguyenHuuCong_DACNTT\Science Solver\obj\Debug\View\App.g.cs
+C:\Data\21110144_NguyenHuuCong_DACNTT\Science Solver\obj\Debug\View\Calculator.g.cs
+C:\Data\21110144_NguyenHuuCong_DACNTT\Science Solver\obj\Debug\View\ChemicalConstant.g.cs
+C:\Data\21110144_NguyenHuuCong_DACNTT\Science Solver\obj\Debug\View\ChemicalElement.g.cs
+C:\Data\21110144_NguyenHuuCong_DACNTT\Science Solver\obj\Debug\View\ChemicalEquation.g.cs
+C:\Data\21110144_NguyenHuuCong_DACNTT\Science Solver\obj\Debug\View\ChemicalLaw.g.cs
+C:\Data\21110144_NguyenHuuCong_DACNTT\Science Solver\obj\Debug\View\Degree1.g.cs
+C:\Data\21110144_NguyenHuuCong_DACNTT\Science Solver\obj\Debug\View\Degree2.g.cs
+C:\Data\21110144_NguyenHuuCong_DACNTT\Science Solver\obj\Debug\View\Degree3.g.cs
+C:\Data\21110144_NguyenHuuCong_DACNTT\Science Solver\obj\Debug\View\Degree4.g.cs
+C:\Data\21110144_NguyenHuuCong_DACNTT\Science Solver\obj\Debug\View\Home.g.cs
+C:\Data\21110144_NguyenHuuCong_DACNTT\Science Solver\obj\Debug\View\Integral.g.cs
+C:\Data\21110144_NguyenHuuCong_DACNTT\Science Solver\obj\Debug\View\Introduction.g.cs
+C:\Data\21110144_NguyenHuuCong_DACNTT\Science Solver\obj\Debug\View\MathematicalFormula.g.cs
+C:\Data\21110144_NguyenHuuCong_DACNTT\Science Solver\obj\Debug\View\MathematicalTheorem.g.cs
+C:\Data\21110144_NguyenHuuCong_DACNTT\Science Solver\obj\Debug\View\Matrix.g.cs
+C:\Data\21110144_NguyenHuuCong_DACNTT\Science Solver\obj\Debug\View\PhysicalConstant.g.cs
+C:\Data\21110144_NguyenHuuCong_DACNTT\Science Solver\obj\Debug\View\PhysicalFormula.g.cs
+C:\Data\21110144_NguyenHuuCong_DACNTT\Science Solver\obj\Debug\View\PhysicalLaw.g.cs
+C:\Data\21110144_NguyenHuuCong_DACNTT\Science Solver\obj\Debug\View\PhysicalUnits.g.cs
+C:\Data\21110144_NguyenHuuCong_DACNTT\Science Solver\obj\Debug\View\Step2.g.cs
+C:\Data\21110144_NguyenHuuCong_DACNTT\Science Solver\obj\Debug\View\Step3.g.cs
+C:\Data\21110144_NguyenHuuCong_DACNTT\Science Solver\obj\Debug\View\Step4.g.cs
+C:\Data\21110144_NguyenHuuCong_DACNTT\Science Solver\obj\Debug\App.g.cs
+C:\Data\21110144_NguyenHuuCong_DACNTT\Science Solver\obj\Debug\Science Solver_Content.g.cs
+C:\Data\21110144_NguyenHuuCong_DACNTT\Science Solver\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Data\21110144_NguyenHuuCong_DACNTT\Science Solver\obj\Debug\Science Solver_MarkupCompile.cache
+C:\Data\21110144_NguyenHuuCong_DACNTT\Science Solver\obj\Debug\Science Solver_MarkupCompile.lref
+C:\Data\DoAnCNTT\DOANCNTT\21110144_NguyenHuuCong_DACNTT\Science Solver\bin\Debug\Science Solver.exe
+C:\Data\DoAnCNTT\DOANCNTT\21110144_NguyenHuuCong_DACNTT\Science Solver\bin\Debug\FontAwesome.WPF.dll
+C:\Data\DoAnCNTT\DOANCNTT\21110144_NguyenHuuCong_DACNTT\Science Solver\bin\Debug\MaterialDesignColors.dll
+C:\Data\DoAnCNTT\DOANCNTT\21110144_NguyenHuuCong_DACNTT\Science Solver\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Data\DoAnCNTT\DOANCNTT\21110144_NguyenHuuCong_DACNTT\Science Solver\bin\Debug\Science Solver.exe.config
+C:\Data\DoAnCNTT\DOANCNTT\21110144_NguyenHuuCong_DACNTT\Science Solver\bin\Debug\EntityFramework.dll
+C:\Data\DoAnCNTT\DOANCNTT\21110144_NguyenHuuCong_DACNTT\Science Solver\bin\Debug\EntityFramework.SqlServer.dll
+C:\Data\DoAnCNTT\DOANCNTT\21110144_NguyenHuuCong_DACNTT\Science Solver\bin\Debug\Microsoft.IdentityModel.Abstractions.dll
+C:\Data\DoAnCNTT\DOANCNTT\21110144_NguyenHuuCong_DACNTT\Science Solver\bin\Debug\Microsoft.Xaml.Behaviors.dll
+C:\Data\DoAnCNTT\DOANCNTT\21110144_NguyenHuuCong_DACNTT\Science Solver\bin\Debug\System.ValueTuple.dll
+C:\Data\DoAnCNTT\DOANCNTT\21110144_NguyenHuuCong_DACNTT\Science Solver\bin\Debug\EntityFramework.xml
+C:\Data\DoAnCNTT\DOANCNTT\21110144_NguyenHuuCong_DACNTT\Science Solver\bin\Debug\EntityFramework.SqlServer.xml
+C:\Data\DoAnCNTT\DOANCNTT\21110144_NguyenHuuCong_DACNTT\Science Solver\bin\Debug\FontAwesome.WPF.xml
+C:\Data\DoAnCNTT\DOANCNTT\21110144_NguyenHuuCong_DACNTT\Science Solver\bin\Debug\MaterialDesignColors.pdb
+C:\Data\DoAnCNTT\DOANCNTT\21110144_NguyenHuuCong_DACNTT\Science Solver\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Data\DoAnCNTT\DOANCNTT\21110144_NguyenHuuCong_DACNTT\Science Solver\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Data\DoAnCNTT\DOANCNTT\21110144_NguyenHuuCong_DACNTT\Science Solver\bin\Debug\Microsoft.IdentityModel.Abstractions.xml
+C:\Data\DoAnCNTT\DOANCNTT\21110144_NguyenHuuCong_DACNTT\Science Solver\bin\Debug\Microsoft.Xaml.Behaviors.pdb
+C:\Data\DoAnCNTT\DOANCNTT\21110144_NguyenHuuCong_DACNTT\Science Solver\bin\Debug\Microsoft.Xaml.Behaviors.xml
+C:\Data\DoAnCNTT\DOANCNTT\21110144_NguyenHuuCong_DACNTT\Science Solver\bin\Debug\System.ValueTuple.xml
+C:\Data\DoAnCNTT\DOANCNTT\21110144_NguyenHuuCong_DACNTT\Science Solver\obj\Debug\Science Solver.csproj.AssemblyReference.cache
+C:\Data\DoAnCNTT\DOANCNTT\21110144_NguyenHuuCong_DACNTT\Science Solver\obj\Debug\Styles\Button.baml
+C:\Data\DoAnCNTT\DOANCNTT\21110144_NguyenHuuCong_DACNTT\Science Solver\obj\Debug\Styles\Image.baml
+C:\Data\DoAnCNTT\DOANCNTT\21110144_NguyenHuuCong_DACNTT\Science Solver\obj\Debug\Styles\Page.baml
+C:\Data\DoAnCNTT\DOANCNTT\21110144_NguyenHuuCong_DACNTT\Science Solver\obj\Debug\Styles\Templates.baml
+C:\Data\DoAnCNTT\DOANCNTT\21110144_NguyenHuuCong_DACNTT\Science Solver\obj\Debug\Styles\Text.baml
+C:\Data\DoAnCNTT\DOANCNTT\21110144_NguyenHuuCong_DACNTT\Science Solver\obj\Debug\MainWindow.g.cs
+C:\Data\DoAnCNTT\DOANCNTT\21110144_NguyenHuuCong_DACNTT\Science Solver\obj\Debug\OtherForms\Matrix1_1.g.cs
+C:\Data\DoAnCNTT\DOANCNTT\21110144_NguyenHuuCong_DACNTT\Science Solver\obj\Debug\View\App.g.cs
+C:\Data\DoAnCNTT\DOANCNTT\21110144_NguyenHuuCong_DACNTT\Science Solver\obj\Debug\View\Calculator.g.cs
+C:\Data\DoAnCNTT\DOANCNTT\21110144_NguyenHuuCong_DACNTT\Science Solver\obj\Debug\View\ChemicalConstant.g.cs
+C:\Data\DoAnCNTT\DOANCNTT\21110144_NguyenHuuCong_DACNTT\Science Solver\obj\Debug\View\ChemicalElement.g.cs
+C:\Data\DoAnCNTT\DOANCNTT\21110144_NguyenHuuCong_DACNTT\Science Solver\obj\Debug\View\ChemicalEquation.g.cs
+C:\Data\DoAnCNTT\DOANCNTT\21110144_NguyenHuuCong_DACNTT\Science Solver\obj\Debug\View\ChemicalLaw.g.cs
+C:\Data\DoAnCNTT\DOANCNTT\21110144_NguyenHuuCong_DACNTT\Science Solver\obj\Debug\View\Degree1.g.cs
+C:\Data\DoAnCNTT\DOANCNTT\21110144_NguyenHuuCong_DACNTT\Science Solver\obj\Debug\View\Degree2.g.cs
+C:\Data\DoAnCNTT\DOANCNTT\21110144_NguyenHuuCong_DACNTT\Science Solver\obj\Debug\View\Degree3.g.cs
+C:\Data\DoAnCNTT\DOANCNTT\21110144_NguyenHuuCong_DACNTT\Science Solver\obj\Debug\View\Degree4.g.cs
+C:\Data\DoAnCNTT\DOANCNTT\21110144_NguyenHuuCong_DACNTT\Science Solver\obj\Debug\View\Home.g.cs
+C:\Data\DoAnCNTT\DOANCNTT\21110144_NguyenHuuCong_DACNTT\Science Solver\obj\Debug\View\Integral.g.cs
+C:\Data\DoAnCNTT\DOANCNTT\21110144_NguyenHuuCong_DACNTT\Science Solver\obj\Debug\View\Introduction.g.cs
+C:\Data\DoAnCNTT\DOANCNTT\21110144_NguyenHuuCong_DACNTT\Science Solver\obj\Debug\View\MathematicalFormula.g.cs
+C:\Data\DoAnCNTT\DOANCNTT\21110144_NguyenHuuCong_DACNTT\Science Solver\obj\Debug\View\MathematicalTheorem.g.cs
+C:\Data\DoAnCNTT\DOANCNTT\21110144_NguyenHuuCong_DACNTT\Science Solver\obj\Debug\View\Matrix.g.cs
+C:\Data\DoAnCNTT\DOANCNTT\21110144_NguyenHuuCong_DACNTT\Science Solver\obj\Debug\View\PhysicalConstant.g.cs
+C:\Data\DoAnCNTT\DOANCNTT\21110144_NguyenHuuCong_DACNTT\Science Solver\obj\Debug\View\PhysicalFormula.g.cs
+C:\Data\DoAnCNTT\DOANCNTT\21110144_NguyenHuuCong_DACNTT\Science Solver\obj\Debug\View\PhysicalLaw.g.cs
+C:\Data\DoAnCNTT\DOANCNTT\21110144_NguyenHuuCong_DACNTT\Science Solver\obj\Debug\View\PhysicalUnits.g.cs
+C:\Data\DoAnCNTT\DOANCNTT\21110144_NguyenHuuCong_DACNTT\Science Solver\obj\Debug\View\Step2.g.cs
+C:\Data\DoAnCNTT\DOANCNTT\21110144_NguyenHuuCong_DACNTT\Science Solver\obj\Debug\View\Step3.g.cs
+C:\Data\DoAnCNTT\DOANCNTT\21110144_NguyenHuuCong_DACNTT\Science Solver\obj\Debug\View\Step4.g.cs
+C:\Data\DoAnCNTT\DOANCNTT\21110144_NguyenHuuCong_DACNTT\Science Solver\obj\Debug\App.g.cs
+C:\Data\DoAnCNTT\DOANCNTT\21110144_NguyenHuuCong_DACNTT\Science Solver\obj\Debug\Science Solver_Content.g.cs
+C:\Data\DoAnCNTT\DOANCNTT\21110144_NguyenHuuCong_DACNTT\Science Solver\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Data\DoAnCNTT\DOANCNTT\21110144_NguyenHuuCong_DACNTT\Science Solver\obj\Debug\Science Solver_MarkupCompile.cache
+C:\Data\DoAnCNTT\DOANCNTT\21110144_NguyenHuuCong_DACNTT\Science Solver\obj\Debug\Science Solver_MarkupCompile.lref
+C:\Data\DoAnCNTT\DOANCNTT\21110144_NguyenHuuCong_DACNTT\Science Solver\obj\Debug\App.baml
+C:\Data\DoAnCNTT\DOANCNTT\21110144_NguyenHuuCong_DACNTT\Science Solver\obj\Debug\MainWindow.baml
+C:\Data\DoAnCNTT\DOANCNTT\21110144_NguyenHuuCong_DACNTT\Science Solver\obj\Debug\OtherForms\Matrix1_1.baml
+C:\Data\DoAnCNTT\DOANCNTT\21110144_NguyenHuuCong_DACNTT\Science Solver\obj\Debug\Utilities\DataTemplate.baml
+C:\Data\DoAnCNTT\DOANCNTT\21110144_NguyenHuuCong_DACNTT\Science Solver\obj\Debug\View\App.baml
+C:\Data\DoAnCNTT\DOANCNTT\21110144_NguyenHuuCong_DACNTT\Science Solver\obj\Debug\View\Calculator.baml
+C:\Data\DoAnCNTT\DOANCNTT\21110144_NguyenHuuCong_DACNTT\Science Solver\obj\Debug\View\ChemicalConstant.baml
+C:\Data\DoAnCNTT\DOANCNTT\21110144_NguyenHuuCong_DACNTT\Science Solver\obj\Debug\View\ChemicalElement.baml
+C:\Data\DoAnCNTT\DOANCNTT\21110144_NguyenHuuCong_DACNTT\Science Solver\obj\Debug\View\ChemicalEquation.baml
+C:\Data\DoAnCNTT\DOANCNTT\21110144_NguyenHuuCong_DACNTT\Science Solver\obj\Debug\View\ChemicalLaw.baml
+C:\Data\DoAnCNTT\DOANCNTT\21110144_NguyenHuuCong_DACNTT\Science Solver\obj\Debug\View\Degree1.baml
+C:\Data\DoAnCNTT\DOANCNTT\21110144_NguyenHuuCong_DACNTT\Science Solver\obj\Debug\View\Degree2.baml
+C:\Data\DoAnCNTT\DOANCNTT\21110144_NguyenHuuCong_DACNTT\Science Solver\obj\Debug\View\Degree3.baml
+C:\Data\DoAnCNTT\DOANCNTT\21110144_NguyenHuuCong_DACNTT\Science Solver\obj\Debug\View\Degree4.baml
+C:\Data\DoAnCNTT\DOANCNTT\21110144_NguyenHuuCong_DACNTT\Science Solver\obj\Debug\View\Home.baml
+C:\Data\DoAnCNTT\DOANCNTT\21110144_NguyenHuuCong_DACNTT\Science Solver\obj\Debug\View\Integral.baml
+C:\Data\DoAnCNTT\DOANCNTT\21110144_NguyenHuuCong_DACNTT\Science Solver\obj\Debug\View\Introduction.baml
+C:\Data\DoAnCNTT\DOANCNTT\21110144_NguyenHuuCong_DACNTT\Science Solver\obj\Debug\View\MathematicalFormula.baml
+C:\Data\DoAnCNTT\DOANCNTT\21110144_NguyenHuuCong_DACNTT\Science Solver\obj\Debug\View\MathematicalTheorem.baml
+C:\Data\DoAnCNTT\DOANCNTT\21110144_NguyenHuuCong_DACNTT\Science Solver\obj\Debug\View\Matrix.baml
+C:\Data\DoAnCNTT\DOANCNTT\21110144_NguyenHuuCong_DACNTT\Science Solver\obj\Debug\View\PhysicalConstant.baml
+C:\Data\DoAnCNTT\DOANCNTT\21110144_NguyenHuuCong_DACNTT\Science Solver\obj\Debug\View\PhysicalFormula.baml
+C:\Data\DoAnCNTT\DOANCNTT\21110144_NguyenHuuCong_DACNTT\Science Solver\obj\Debug\View\PhysicalLaw.baml
+C:\Data\DoAnCNTT\DOANCNTT\21110144_NguyenHuuCong_DACNTT\Science Solver\obj\Debug\View\PhysicalUnits.baml
+C:\Data\DoAnCNTT\DOANCNTT\21110144_NguyenHuuCong_DACNTT\Science Solver\obj\Debug\View\Step2.baml
+C:\Data\DoAnCNTT\DOANCNTT\21110144_NguyenHuuCong_DACNTT\Science Solver\obj\Debug\View\Step3.baml
+C:\Data\DoAnCNTT\DOANCNTT\21110144_NguyenHuuCong_DACNTT\Science Solver\obj\Debug\View\Step4.baml
+C:\Data\DoAnCNTT\DOANCNTT\21110144_NguyenHuuCong_DACNTT\Science Solver\obj\Debug\Science Solver.g.resources
+C:\Data\DoAnCNTT\DOANCNTT\21110144_NguyenHuuCong_DACNTT\Science Solver\obj\Debug\Science_Solver.Properties.Resources.resources
+C:\Data\DoAnCNTT\DOANCNTT\21110144_NguyenHuuCong_DACNTT\Science Solver\obj\Debug\Science Solver.csproj.GenerateResource.cache
+C:\Data\DoAnCNTT\DOANCNTT\21110144_NguyenHuuCong_DACNTT\Science Solver\obj\Debug\Science Solver.csproj.CoreCompileInputs.cache
+C:\Data\DoAnCNTT\DOANCNTT\21110144_NguyenHuuCong_DACNTT\Science Solver\obj\Debug\Science Solver.csproj.CopyComplete
+C:\Data\DoAnCNTT\DOANCNTT\21110144_NguyenHuuCong_DACNTT\Science Solver\obj\Debug\Science Solver.exe
+C:\Data\DoAnCNTT\DOANCNTT\21110144_NguyenHuuCong_DACNTT\Science Solver\obj\Debug\Science Solver.pdb
+C:\Data\DoAnCNTT\DOANCNTT\21110144_NguyenHuuCong_DACNTT\Science Solver\bin\Debug\Science Solver.pdb
+C:\Data\DoAnCNTT\DOANCNTT\21110144_NguyenHuuCong_DACNTT\Science Solver\obj\Debug\OtherForms\Matrix1_2.g.cs
+C:\Data\DoAnCNTT\DOANCNTT\21110144_NguyenHuuCong_DACNTT\Science Solver\obj\Debug\OtherForms\Matrix1_3.g.cs
+C:\Data\DoAnCNTT\DOANCNTT\21110144_NguyenHuuCong_DACNTT\Science Solver\obj\Debug\OtherForms\Matrix1_4.g.cs
+C:\Data\DoAnCNTT\DOANCNTT\21110144_NguyenHuuCong_DACNTT\Science Solver\obj\Debug\OtherForms\Matrix1_2.baml
+C:\Data\DoAnCNTT\DOANCNTT\21110144_NguyenHuuCong_DACNTT\Science Solver\obj\Debug\OtherForms\Matrix1_3.baml
+C:\Data\DoAnCNTT\DOANCNTT\21110144_NguyenHuuCong_DACNTT\Science Solver\obj\Debug\OtherForms\Matrix1_4.baml
+C:\Data\DoAnCNTT\DOANCNTT\21110144_NguyenHuuCong_DACNTT\Science Solver\obj\Debug\OtherForms\Matrix2_1.g.cs
+C:\Data\DoAnCNTT\DOANCNTT\21110144_NguyenHuuCong_DACNTT\Science Solver\obj\Debug\OtherForms\Matrix2_2.g.cs
+C:\Data\DoAnCNTT\DOANCNTT\21110144_NguyenHuuCong_DACNTT\Science Solver\obj\Debug\OtherForms\Matrix2_3.g.cs
+C:\Data\DoAnCNTT\DOANCNTT\21110144_NguyenHuuCong_DACNTT\Science Solver\obj\Debug\OtherForms\Matrix2_4.g.cs
+C:\Data\DoAnCNTT\DOANCNTT\21110144_NguyenHuuCong_DACNTT\Science Solver\obj\Debug\OtherForms\Matrix3_1.g.cs
+C:\Data\DoAnCNTT\DOANCNTT\21110144_NguyenHuuCong_DACNTT\Science Solver\obj\Debug\OtherForms\Matrix3_2.g.cs
+C:\Data\DoAnCNTT\DOANCNTT\21110144_NguyenHuuCong_DACNTT\Science Solver\obj\Debug\OtherForms\Matrix3_3.g.cs
+C:\Data\DoAnCNTT\DOANCNTT\21110144_NguyenHuuCong_DACNTT\Science Solver\obj\Debug\OtherForms\Matrix3_4.g.cs
+C:\Data\DoAnCNTT\DOANCNTT\21110144_NguyenHuuCong_DACNTT\Science Solver\obj\Debug\OtherForms\Matrix4_1.g.cs
+C:\Data\DoAnCNTT\DOANCNTT\21110144_NguyenHuuCong_DACNTT\Science Solver\obj\Debug\OtherForms\Matrix4_2.g.cs
+C:\Data\DoAnCNTT\DOANCNTT\21110144_NguyenHuuCong_DACNTT\Science Solver\obj\Debug\OtherForms\Matrix4_3.g.cs
+C:\Data\DoAnCNTT\DOANCNTT\21110144_NguyenHuuCong_DACNTT\Science Solver\obj\Debug\OtherForms\Matrix4_4.g.cs
+C:\Data\DoAnCNTT\DOANCNTT\21110144_NguyenHuuCong_DACNTT\Science Solver\obj\Debug\OtherForms\Matrix2_1.baml
+C:\Data\DoAnCNTT\DOANCNTT\21110144_NguyenHuuCong_DACNTT\Science Solver\obj\Debug\OtherForms\Matrix2_2.baml
+C:\Data\DoAnCNTT\DOANCNTT\21110144_NguyenHuuCong_DACNTT\Science Solver\obj\Debug\OtherForms\Matrix2_3.baml
+C:\Data\DoAnCNTT\DOANCNTT\21110144_NguyenHuuCong_DACNTT\Science Solver\obj\Debug\OtherForms\Matrix2_4.baml
+C:\Data\DoAnCNTT\DOANCNTT\21110144_NguyenHuuCong_DACNTT\Science Solver\obj\Debug\OtherForms\Matrix3_1.baml
+C:\Data\DoAnCNTT\DOANCNTT\21110144_NguyenHuuCong_DACNTT\Science Solver\obj\Debug\OtherForms\Matrix3_2.baml
+C:\Data\DoAnCNTT\DOANCNTT\21110144_NguyenHuuCong_DACNTT\Science Solver\obj\Debug\OtherForms\Matrix3_3.baml
+C:\Data\DoAnCNTT\DOANCNTT\21110144_NguyenHuuCong_DACNTT\Science Solver\obj\Debug\OtherForms\Matrix3_4.baml
+C:\Data\DoAnCNTT\DOANCNTT\21110144_NguyenHuuCong_DACNTT\Science Solver\obj\Debug\OtherForms\Matrix4_1.baml
+C:\Data\DoAnCNTT\DOANCNTT\21110144_NguyenHuuCong_DACNTT\Science Solver\obj\Debug\OtherForms\Matrix4_2.baml
+C:\Data\DoAnCNTT\DOANCNTT\21110144_NguyenHuuCong_DACNTT\Science Solver\obj\Debug\OtherForms\Matrix4_3.baml
+C:\Data\DoAnCNTT\DOANCNTT\21110144_NguyenHuuCong_DACNTT\Science Solver\obj\Debug\OtherForms\Matrix4_4.baml

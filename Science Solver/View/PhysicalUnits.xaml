@@ -1,0 +1,165 @@
+﻿<UserControl
+    x:Class="Science_Solver.View.PhysicalUnits"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:fa="http://schemas.fontawesome.io/icons/"
+    xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:vm="clr-namespace:Science_Solver.ViewModel"
+    d:DesignHeight="600"
+    d:DesignWidth="622"
+    Background="Transparent"
+    FontFamily="/Fonts/#Rubik Medium"
+    mc:Ignorable="d">
+    <Grid>
+
+        <Border
+            Margin="0,0,0,0"
+            Background="#37474f"
+            CornerRadius="0 40 0 0">
+            <Grid>
+                <Grid
+                    Margin="30"
+                    HorizontalAlignment="Left"
+                    VerticalAlignment="Top">
+                    <Border Width="300" Height="100">
+                        <StackPanel Orientation="Horizontal">
+                            <Border Width="50" Height="50">
+                                <fa:ImageAwesome
+                                    Margin="20,0,0,0"
+                                    Foreground="AliceBlue"
+                                    Icon="Magic" />
+                            </Border>
+                            <Label
+                                Margin="10,0,0,0"
+                                VerticalAlignment="Center"
+                                Content="Exchange Units"
+                                FontSize="30"
+                                Foreground="#fff" />
+                        </StackPanel>
+                    </Border>
+                </Grid>
+                <Grid>
+                    <StackPanel VerticalAlignment="Center" Orientation="Vertical">
+                        <Border Height="50">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="220" />
+                                    <ColumnDefinition Width="260" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <Border Grid.Column="0" Margin="0">
+                                    <Label
+                                        Margin="70,0,0,0"
+                                        HorizontalAlignment="Left"
+                                        VerticalAlignment="Center"
+                                        Content="Previous Unit:"
+                                        FontSize="14"
+                                        FontStretch="Condensed"
+                                        FontStyle="Normal"
+                                        FontWeight="ExtraLight"
+                                        Foreground="#ffee58" />
+                                </Border>
+                                <Border Grid.Column="1" Margin="0">
+                                    <TextBox
+                                        Name="Number"
+                                        Margin="0,0,0,0"
+                                        VerticalAlignment="Center"
+                                        materialDesign:HintAssist.HelperText="1, 2, 3...."
+                                        materialDesign:HintAssist.Hint="Numberic"
+                                        BorderBrush="#efebe9"
+                                        Foreground="#fafafa"
+                                        Style="{StaticResource MaterialDesignOutlinedTextBox}"
+                                        Text="{Binding PreviousUnit, UpdateSourceTrigger=PropertyChanged}" />
+                                </Border>
+                            </Grid>
+                        </Border>
+                        <Border Height="50" Margin="0,20,0,0">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="220" />
+                                    <ColumnDefinition Width="260" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <Border Grid.Column="0" Margin="0">
+                                    <Label
+                                        Margin="70,0,0,0"
+                                        HorizontalAlignment="Left"
+                                        VerticalAlignment="Center"
+                                        Content="Exchange:"
+                                        FontSize="14"
+                                        FontStretch="Condensed"
+                                        FontStyle="Normal"
+                                        FontWeight="ExtraLight"
+                                        Foreground="#aed581" />
+                                </Border>
+                                <Border Grid.Column="1" Margin="0">
+
+                                    <ComboBox
+                                        Width="260"
+                                        HorizontalAlignment="Left"
+                                        materialDesign:HintAssist.Hint="exchange to"
+                                        materialDesign:TextFieldAssist.HasClearButton="True"
+                                        Background="#859ba6"
+                                        BorderBrush="#efebe9"
+                                        Foreground="#000000"
+                                        ItemsSource="{Binding ListChoiceExchange}"
+                                        SelectedItem="{Binding SelectedValidExchange}"
+                                        Style="{StaticResource MaterialDesignOutlinedComboBox}" />
+                                </Border>
+                            </Grid>
+                        </Border>
+                        <Button
+                            Width="400"
+                            Margin="80,20,0,0"
+                            HorizontalAlignment="Left"
+                            VerticalAlignment="Center"
+                            Background="#37474f"
+                            Command="{Binding ExchangeCommand}"
+                            Content="Exchange"
+                            Foreground="#f5f5f5"
+                            IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}"
+                            Style="{StaticResource MaterialDesignPaperSecondaryButton}"
+                            ToolTip="Resource name: MaterialDesignPaperSecondaryButton" />
+                        <Border Height="50" Margin="0,20,0,0">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="220" />
+                                    <ColumnDefinition Width="260" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <Border Grid.Column="0" Margin="0">
+                                    <Label
+                                        Margin="70,0,0,0"
+                                        HorizontalAlignment="Left"
+                                        VerticalAlignment="Center"
+                                        Content="Conversed Unit"
+                                        FontSize="14"
+                                        FontStretch="Condensed"
+                                        FontStyle="Normal"
+                                        FontWeight="ExtraLight"
+                                        Foreground="#ff642e" />
+                                </Border>
+                                <Border Grid.Column="1" Margin="0">
+                                    <TextBox
+                                        Name="ExchangedUnit"
+                                        Margin="0,0,0,0"
+                                        VerticalAlignment="Center"
+                                        materialDesign:HintAssist.Hint="Conversed"
+                                        BorderBrush="#efebe9"
+                                        Foreground="#fafafa"
+                                        Style="{StaticResource MaterialDesignOutlinedTextBox}"
+                                        Text="{Binding ConversedUnit, UpdateSourceTrigger=PropertyChanged}" />
+                                </Border>
+                            </Grid>
+                        </Border>
+                    </StackPanel>
+                </Grid>
+            </Grid>
+        </Border>
+
+
+    </Grid>
+
+</UserControl>

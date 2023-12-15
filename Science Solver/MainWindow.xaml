@@ -1,0 +1,571 @@
+﻿<Window
+    x:Class="Science_Solver.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:Menu="clr-namespace:Science_Solver.Utilities"
+    xmlns:View="clr-namespace:Science_Solver.View"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:fa="http://schemas.fontawesome.io/icons/"
+    xmlns:local="clr-namespace:Science_Solver"
+    xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:vm="clr-namespace:Science_Solver.ViewModel"
+    Title="MainWindow"
+    Width="850"
+    Height="700"
+    AllowsTransparency="True"
+    Background="Transparent"
+    Icon="/Images/science-report.png"
+    WindowStartupLocation="CenterScreen"
+    WindowStyle="None"
+    mc:Ignorable="d">
+    <Window.Resources>
+        <DataTemplate DataType="{x:Type vm:HomeVM}">
+            <View:Home />
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type vm:AppVM}">
+            <View:App />
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type vm:IntroductionVM}">
+            <View:Introduction />
+        </DataTemplate>
+    </Window.Resources>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="850*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <!--  // Window Border //  -->
+
+        <Border Background="#212529" CornerRadius="20" />
+
+        <Grid>
+
+            <!--  // Base Grid //  -->
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="228" />
+                <ColumnDefinition Width="622" />
+            </Grid.ColumnDefinitions>
+
+            <!--  // Navigation Panel //  -->
+
+            <Grid Width="228" HorizontalAlignment="Left">
+
+                <Border Background="#272B2F" CornerRadius="20,0,0,20" />
+
+                <StackPanel Width="230" Height="480">
+
+                    <!--  // Home //  -->
+                    <Menu:Btn
+                        Command="{Binding HomeCommand}"
+                        Cursor="Hand"
+                        IsChecked="False"
+                        Style="{StaticResource BtnStyle}">
+
+                        <Grid>
+
+                            <Image
+                                Width="32"
+                                Height="32"
+                                Margin="10,0,0,0"
+                                Source="Images/img_home8.png"
+                                Style="{StaticResource Image_Style}" />
+
+                            <TextBlock
+                                Margin="55,0,0,0"
+                                FontSize="20"
+                                Style="{StaticResource Text_Style}"
+                                Text="Home" />
+
+                        </Grid>
+
+                    </Menu:Btn>
+
+
+                    <Menu:Btn
+                        Command="{Binding AppCommand}"
+                        Cursor="Hand"
+                        IsChecked="False"
+                        Style="{StaticResource BtnStyle}">
+
+                        <Grid>
+
+                            <Image
+                                Width="32"
+                                Height="32"
+                                Margin="10,0,0,0"
+                                Source="/Images/img_app.png"
+                                Style="{StaticResource Image_Style}" />
+
+                            <TextBlock
+                                Margin="55,0,0,0"
+                                FontSize="20"
+                                Style="{StaticResource Text_Style}"
+                                Text="App" />
+
+                        </Grid>
+
+                    </Menu:Btn>
+
+
+                    <Menu:Btn
+                        Command="{Binding IntroductionCommand}"
+                        Cursor="Hand"
+                        IsChecked="False"
+                        Style="{StaticResource BtnStyle}">
+                        <Grid>
+                            <Image
+                                Width="32"
+                                Height="32"
+                                Margin="10,0,0,0"
+                                Source="Images/img_order.png"
+                                Style="{StaticResource Image_Style}" />
+
+                            <TextBlock
+                                Margin="55,0,0,0"
+                                FontSize="20"
+                                Style="{StaticResource Text_Style}"
+                                Text="Introduction" />
+
+                        </Grid>
+                    </Menu:Btn>
+
+                    <Menu
+                        Width="228"
+                        Height="300"
+                        Background="Transparent">
+                        <Menu.ItemsPanel>
+
+                            <ItemsPanelTemplate>
+
+                                <VirtualizingStackPanel Orientation="Vertical" />
+
+                            </ItemsPanelTemplate>
+
+                        </Menu.ItemsPanel>
+
+
+                        <!--  // Main Menu - Search //  -->
+
+                        <MenuItem Header="Search" Template="{StaticResource Menu_SubMenu_Template}">
+
+                            <MenuItem.Icon>
+
+                                <Image Source="Images/img_search.png" Stretch="Uniform" />
+
+                            </MenuItem.Icon>
+
+                            <!--  // Searching Math//  -->
+
+                            <MenuItem Header="Math" Template="{StaticResource Menu_SubMenu_Template}">
+
+                                <MenuItem.Icon>
+
+                                    <Image Source="Images/icons8-math-50.png" Stretch="Uniform" />
+
+                                </MenuItem.Icon>
+
+                                <!--  // Searching Mathematical Formula//  -->
+                                <MenuItem
+                                    Command="{Binding MathematicalFormulaCommand}"
+                                    Header="Math Formula"
+                                    Template="{StaticResource Item_Template}">
+                                    <MenuItem.Icon>
+                                        <Image Source="Images/icons8-math-51.png" Stretch="Uniform" />
+
+                                    </MenuItem.Icon>
+
+                                </MenuItem>
+                                <!--  // Searching Mathematical Theorem //  -->
+                                <MenuItem
+                                    Command="{Binding MathematicalTheoremCommand}"
+                                    Header="Math Theorem"
+                                    Template="{StaticResource Item_Template}">
+
+                                    <MenuItem.Icon>
+
+                                        <Image Source="Images/calculating.png" Stretch="Uniform" />
+
+                                    </MenuItem.Icon>
+
+                                </MenuItem>
+
+                            </MenuItem>
+
+                            <!--  // Search Physical//  -->
+
+                            <MenuItem Header="Physic" Template="{StaticResource Menu_SubMenu_Template}">
+
+                                <MenuItem.Icon>
+
+                                    <Image Source="Images/icons8-physic-64.png" Stretch="Uniform" />
+
+                                </MenuItem.Icon>
+
+                                <!--  // Search Physic Constant//  -->
+
+
+                                <MenuItem
+                                    Command="{Binding PhysicalConstantCommand}"
+                                    Header="Physic Contant"
+                                    Template="{StaticResource Item_Template}">
+
+                                    <MenuItem.Icon>
+
+                                        <Image Source="Images/pi-phy.png" Stretch="UniformToFill" />
+
+                                    </MenuItem.Icon>
+                                </MenuItem>
+
+                                <!--  // Search Physic Law//  -->
+                                <MenuItem
+                                    Command="{Binding PhysicalLawCommand}"
+                                    Header="Physic Law"
+                                    Template="{StaticResource Item_Template}">
+                                    <MenuItem.Icon>
+                                        <Image Source="Images/law-of-motion.png" Stretch="Uniform" />
+                                    </MenuItem.Icon>
+
+                                </MenuItem>
+                                <!--  // Search Physic Formula//  -->
+                                <MenuItem
+                                    Command="{Binding PhysicalFormulaCommand}"
+                                    Header="Physic Formula"
+                                    Template="{StaticResource Item_Template}">
+                                    <MenuItem.Icon>
+                                        <Image Source="Images/physics.png" Stretch="Uniform" />
+                                    </MenuItem.Icon>
+                                </MenuItem>
+                            </MenuItem>
+
+                            <!--  - Search Chemistry  -->
+                            <MenuItem Header="Chemistry" Template="{StaticResource Menu_SubMenu_Template}">
+
+                                <MenuItem.Icon>
+
+                                    <Image Source="Images/chemistry.png" Stretch="Uniform" />
+
+                                </MenuItem.Icon>
+
+                                <!--  // Search Chemical Elements//  -->
+
+
+                                <MenuItem
+                                    Command="{Binding SearchingElementChemicalCommand}"
+                                    Header="Chemical Elements"
+                                    Template="{StaticResource Item_Template}">
+
+                                    <MenuItem.Icon>
+
+                                        <Image Source="Images/helium.png" Stretch="Uniform" />
+
+                                    </MenuItem.Icon>
+                                </MenuItem>
+
+                                <!--  // Search Chemical Equations//  -->
+                                <MenuItem
+                                    Command="{Binding ChemicalEquationCommand}"
+                                    Header="Chemical Equations"
+                                    Template="{StaticResource Item_Template}">
+                                    <MenuItem.Icon>
+                                        <Image Source="Images/science.png" Stretch="Uniform" />
+                                    </MenuItem.Icon>
+
+                                </MenuItem>
+                                <!--  // Search Chemical Constant//  -->
+                                <MenuItem
+                                    Command="{Binding ChemicalConstantCommand}"
+                                    Header="Chemical Constant"
+                                    Template="{StaticResource Item_Template}">
+                                    <MenuItem.Icon>
+                                        <Image Source="Images/development.png" Stretch="Uniform" />
+                                    </MenuItem.Icon>
+                                </MenuItem>
+
+                                <!--  // Search Chemical Theorem//  -->
+                                <MenuItem
+                                    Command="{Binding ChemicalLawCommand}"
+                                    Header="Chemical Law"
+                                    Template="{StaticResource Item_Template}">
+                                    <MenuItem.Icon>
+                                        <Image Source="Images/chemical_theorem.png" Stretch="Uniform" />
+                                    </MenuItem.Icon>
+                                </MenuItem>
+                            </MenuItem>
+                        </MenuItem>
+
+                        <!--  Mathematics  -->
+                        <MenuItem Header="Mathematics" Template="{StaticResource Menu_SubMenu_Template}">
+                            <MenuItem.Icon>
+                                <Image Source="Images/chalkboard.png" Stretch="UniformToFill" />
+                            </MenuItem.Icon>
+
+                            <!--  Calculate  -->
+                            <MenuItem
+                                Command="{Binding CalculatorCommand}"
+                                Header="Calculator"
+                                Template="{StaticResource Menu_Template}">
+                                <MenuItem.Icon>
+                                    <Image Source="Images/calculator.png" Stretch="Uniform" />
+                                </MenuItem.Icon>
+                            </MenuItem>
+
+                            <!--  Solving  -->
+                            <MenuItem Header="Solving" Template="{StaticResource Menu_SubMenu_Template}">
+                                <MenuItem.Icon>
+                                    <Image Source="Images/mathematics.png" Stretch="Fill" />
+                                </MenuItem.Icon>
+
+
+                                <!--  Equation  -->
+                                <MenuItem Header="Equation" Template="{StaticResource Menu_SubMenu_Template}">
+                                    <MenuItem.Icon>
+                                        <Image Source="Images/Equation.png" />
+                                    </MenuItem.Icon>
+
+                                    <MenuItem
+                                        Command="{Binding Degree1Command}"
+                                        Header="Degree 1"
+                                        Template="{StaticResource Item_Template}">
+                                        <MenuItem.Icon>
+                                            <Image Source="Images/1_equation.png" Stretch="Uniform" />
+                                        </MenuItem.Icon>
+                                    </MenuItem>
+
+                                    <MenuItem
+                                        Command="{Binding Degree2Command}"
+                                        Header="Degree 2"
+                                        Template="{StaticResource Item_Template}">
+                                        <MenuItem.Icon>
+                                            <Image Source="Images/2_equation.png" Stretch="Uniform" />
+                                        </MenuItem.Icon>
+                                    </MenuItem>
+
+                                    <MenuItem
+                                        Command="{Binding Degree3Command}"
+                                        Header="Degree 3"
+                                        Template="{StaticResource Item_Template}">
+                                        <MenuItem.Icon>
+                                            <Image Source="Images/3_equation.png" Stretch="Uniform" />
+                                        </MenuItem.Icon>
+                                    </MenuItem>
+
+                                    <MenuItem
+                                        Command="{Binding Degree4Command}"
+                                        Header="Degree 4"
+                                        Template="{StaticResource Item_Template}">
+                                        <MenuItem.Icon>
+                                            <Image Source="Images/4_equation.png" Stretch="Uniform" />
+                                        </MenuItem.Icon>
+                                    </MenuItem>
+
+                                </MenuItem>
+                                <!--  Equation  -->
+                                <MenuItem Header="Equations" Template="{StaticResource Menu_SubMenu_Template}">
+                                    <MenuItem.Icon>
+                                        <Image Source="Images/Equations.png" />
+                                    </MenuItem.Icon>
+
+                                    <MenuItem
+                                        Command="{Binding Step2Command}"
+                                        Header="Step 2"
+                                        Template="{StaticResource Item_Template}">
+                                        <MenuItem.Icon>
+                                            <Image Source="Images/2_equations.png" Stretch="Uniform" />
+                                        </MenuItem.Icon>
+                                    </MenuItem>
+
+                                    <MenuItem
+                                        Command="{Binding Step3Command}"
+                                        Header="Step 3"
+                                        Template="{StaticResource Item_Template}">
+                                        <MenuItem.Icon>
+                                            <Image Source="Images/3_equations.png" Stretch="Uniform" />
+                                        </MenuItem.Icon>
+                                    </MenuItem>
+
+                                    <MenuItem
+                                        Command="{Binding Step4Command}"
+                                        Header="Step 4"
+                                        Template="{StaticResource Item_Template}">
+                                        <MenuItem.Icon>
+                                            <Image Source="Images/4_equations.png" Stretch="Uniform" />
+                                        </MenuItem.Icon>
+                                    </MenuItem>
+                                </MenuItem>
+
+                            </MenuItem>
+
+                            <!--  Maxtrix  -->
+                            <MenuItem
+                                Command="{Binding MatrixCommand}"
+                                Header="Matrix"
+                                Template="{StaticResource Menu_Template}">
+                                <MenuItem.Icon>
+                                    <Image Source="Images/Matrix.png" Stretch="Uniform" />
+                                </MenuItem.Icon>
+                            </MenuItem>
+                            <!--  Integral  -->
+
+                            <!--<MenuItem
+                                Command="{Binding IntegralCommand}"
+                                Header="Integral"
+                                Template="{StaticResource Menu_Template}">
+                                <MenuItem.Icon>
+                                    <Image Source="Images/integral.png" Stretch="Uniform" />
+                                </MenuItem.Icon>
+                            </MenuItem>-->
+
+                            <!--  // Searching Mathematical Formula//  -->
+                            <MenuItem
+                                Command="{Binding MathematicalFormulaCommand}"
+                                Header="Math Formula"
+                                Template="{StaticResource Item_Template}">
+
+                                <MenuItem.Icon>
+
+                                    <Image Source="Images/icons8-math-51.png" Stretch="Uniform" />
+
+                                </MenuItem.Icon>
+
+                            </MenuItem>
+                            <!--  // Searching Mathematical Theorem //  -->
+                            <MenuItem
+                                Command="{Binding MathematicalTheoremCommand}"
+                                Header="Math Theorem"
+                                Template="{StaticResource Item_Template}">
+
+                                <MenuItem.Icon>
+
+                                    <Image Source="Images/calculating.png" Stretch="Uniform" />
+
+                                </MenuItem.Icon>
+
+                            </MenuItem>
+
+                        </MenuItem>
+                        <!--  Physics  -->
+                        <MenuItem Header="Physics" Template="{StaticResource Menu_SubMenu_Template}">
+                            <MenuItem.Icon>
+                                <Image Source="Images/science-report.png" />
+                            </MenuItem.Icon>
+                            <!--  Exchange Unit  -->
+                            <MenuItem
+                                Command="{Binding PhysicalUnitsCommand}"
+                                Header="Physic Units"
+                                Template="{StaticResource Item_Template}">
+
+                                <MenuItem.Icon>
+
+                                    <Image Source="Images/physical_unit.png" Stretch="UniformToFill" />
+
+                                </MenuItem.Icon>
+                            </MenuItem>
+                            <!--  Searching constant  -->
+                            <MenuItem
+                                Command="{Binding PhysicalConstantCommand}"
+                                Header="Physic Constant"
+                                Template="{StaticResource Item_Template}">
+                                <MenuItem.Icon>
+                                    <Image Source="Images/pi-phy.png" Stretch="UniformToFill" />
+
+                                </MenuItem.Icon>
+                            </MenuItem>
+
+                            <!--  // Search Physic Law//  -->
+                            <MenuItem
+                                Command="{Binding PhysicalLawCommand}"
+                                Header="Physic Law"
+                                Template="{StaticResource Item_Template}">
+                                <MenuItem.Icon>
+                                    <Image Source="Images/law-of-motion.png" Stretch="Uniform" />
+                                </MenuItem.Icon>
+
+                            </MenuItem>
+                            <!--  // Search Physic Formula//  -->
+                            <MenuItem
+                                Command="{Binding PhysicalFormulaCommand}"
+                                Header="Physic Formula"
+                                Template="{StaticResource Item_Template}">
+                                <MenuItem.Icon>
+                                    <Image Source="Images/physics.png" Stretch="Uniform" />
+                                </MenuItem.Icon>
+                            </MenuItem>
+
+
+                        </MenuItem>
+
+                        <!--  Chemistry  -->
+                        <MenuItem Header="Chemistry" Template="{StaticResource Menu_SubMenu_Template}">
+                            <MenuItem.Icon>
+                                <Image Source="Images/chemistry.png" />
+                            </MenuItem.Icon>
+
+                            <!--  // Search Chemical Equation//  -->
+
+
+                            <MenuItem
+                                Command="{Binding SearchingElementChemicalCommand}"
+                                Header="Chemical Elements"
+                                Template="{StaticResource Item_Template}">
+
+                                <MenuItem.Icon>
+
+                                    <Image Source="Images/helium.png" Stretch="Uniform" />
+
+                                </MenuItem.Icon>
+                            </MenuItem>
+
+                            <!--  // Search Chemical Equations//  -->
+                            <MenuItem
+                                Command="{Binding ChemicalEquationCommand}"
+                                Header="Chemical Equations"
+                                Template="{StaticResource Item_Template}">
+                                <MenuItem.Icon>
+                                    <Image Source="Images/science.png" Stretch="Uniform" />
+                                </MenuItem.Icon>
+
+                            </MenuItem>
+                            <!--  // Search Chemical Constant//  -->
+                            <MenuItem
+                                Command="{Binding ChemicalConstantCommand}"
+                                Header="Chemical Constant"
+                                Template="{StaticResource Item_Template}">
+                                <MenuItem.Icon>
+                                    <Image Source="Images/development.png" Stretch="Uniform" />
+                                </MenuItem.Icon>
+                            </MenuItem>
+                            <!--  // Search Chemical Theorem//  -->
+                            <MenuItem
+                                Command="{Binding ChemicalLawCommand}"
+                                Header="Chemical Law"
+                                Template="{StaticResource Item_Template}">
+                                <MenuItem.Icon>
+                                    <Image Source="Images/chemical_theorem.png" Stretch="Uniform" />
+                                </MenuItem.Icon>
+                            </MenuItem>
+                        </MenuItem>
+                    </Menu>
+
+
+                </StackPanel>
+
+            </Grid>
+
+            <Grid Grid.Column="1">
+                <ContentControl
+                    x:Name="Pages"
+                    Grid.Row="1"
+                    Content="{Binding CurrentView}" />
+            </Grid>
+
+        </Grid>
+
+        <Button
+            x:Name="CloseApp"
+            Click="CloseApp_Click"
+            Style="{StaticResource ExitApp}" />
+
+    </Grid>
+</Window>

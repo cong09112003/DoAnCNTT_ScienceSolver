@@ -1,0 +1,608 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="packages\EntityFramework.6.4.4\build\EntityFramework.props" Condition="Exists('packages\EntityFramework.6.4.4\build\EntityFramework.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C13D6568-9C05-43BC-8FD0-9068612B9DC1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Science_Solver</RootNamespace>
+    <AssemblyName>Science Solver</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>packages\EntityFramework.6.4.4\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="FontAwesome.WPF, Version=4.7.0.37774, Culture=neutral, PublicKeyToken=0758b07a11a4f466, processorArchitecture=MSIL">
+      <HintPath>packages\FontAwesome.WPF.4.7.0.9\lib\net40\FontAwesome.WPF.dll</HintPath>
+    </Reference>
+    <Reference Include="MaterialDesignColors, Version=2.1.4.0, Culture=neutral, PublicKeyToken=df2a72020bd7962a, processorArchitecture=MSIL">
+      <HintPath>packages\MaterialDesignColors.2.1.4\lib\net462\MaterialDesignColors.dll</HintPath>
+    </Reference>
+    <Reference Include="MaterialDesignThemes.Wpf, Version=4.9.0.0, Culture=neutral, PublicKeyToken=df2a72020bd7962a, processorArchitecture=MSIL">
+      <HintPath>packages\MaterialDesignThemes.4.9.0\lib\net462\MaterialDesignThemes.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.IdentityModel.Abstractions, Version=7.0.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.IdentityModel.Abstractions.7.0.3\lib\net472\Microsoft.IdentityModel.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualC" />
+    <Reference Include="Microsoft.Xaml.Behaviors, Version=1.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Xaml.Behaviors.Wpf.1.1.39\lib\net45\Microsoft.Xaml.Behaviors.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.IdentityModel" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.ValueTuple.4.5.0\lib\net47\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="AppModel\MathematicalCalculator.cs" />
+    <Compile Include="AppModel\MathematicalEquation.cs" />
+    <Compile Include="AppModel\MathematicalEquationDegree1.cs" />
+    <Compile Include="AppModel\MathematicalEquationDegree2.cs" />
+    <Compile Include="AppModel\MathematicalEquationDegree3.cs" />
+    <Compile Include="AppModel\MathematicalEquationDegree4.cs" />
+    <Compile Include="AppModel\MathematicalMatrix.cs" />
+    <Compile Include="AppModel\MathematicalSystemEquation.cs" />
+    <Compile Include="AppModel\MathematicalSystemEquationStep2.cs" />
+    <Compile Include="AppModel\MathematicalSystemEquationStep3.cs" />
+    <Compile Include="AppModel\MathematicalSystemEquationStep4.cs" />
+    <Compile Include="Linq\ChemicalConstantLinq.cs" />
+    <Compile Include="Linq\ChemicalEquationsLinq.cs" />
+    <Compile Include="Linq\ChemicalLawLinq.cs" />
+    <Compile Include="Linq\MathematicalFormulaLinq.cs" />
+    <Compile Include="Linq\MathematicalTheoremLinq.cs" />
+    <Compile Include="Linq\PhysicalConstantLinq.cs" />
+    <Compile Include="Linq\PhysicalFormulaLinq.cs" />
+    <Compile Include="Linq\PhysicalLawLinq.cs" />
+    <Compile Include="Model\ChemicalConstant.cs" />
+    <Compile Include="Model\ChemicalConstant_View.cs" />
+    <Compile Include="Model\ChemicalElement.cs" />
+    <Compile Include="Model\ChemicalElement_View.cs" />
+    <Compile Include="Model\ChemicalEquation.cs" />
+    <Compile Include="Model\ChemicalEquation_View.cs" />
+    <Compile Include="Model\ChemicalLaw.cs" />
+    <Compile Include="Model\ChemicalLaw_View.cs" />
+    <Compile Include="Model\MathematicalLaw.cs" />
+    <Compile Include="Model\MathematicalLaw_View.cs" />
+    <Compile Include="Model\MathematicalTheorem.cs" />
+    <Compile Include="Model\MathematicalTheorem_View.cs" />
+    <Compile Include="Model\PhysicalConstant.cs" />
+    <Compile Include="Model\PhysicalConstant_View.cs" />
+    <Compile Include="Model\PhysicalFormula.cs" />
+    <Compile Include="Model\PhysicalFormula_View.cs" />
+    <Compile Include="Model\PhysicalLaw.cs" />
+    <Compile Include="Model\PhysicalLaw_View.cs" />
+    <Compile Include="Model\ScienceSolverModels.cs" />
+    <Compile Include="OtherForms\Matrix1_1.xaml.cs">
+      <DependentUpon>Matrix1_1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="OtherForms\Matrix1_2.xaml.cs">
+      <DependentUpon>Matrix1_2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="OtherForms\Matrix1_3.xaml.cs">
+      <DependentUpon>Matrix1_3.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="OtherForms\Matrix1_4.xaml.cs">
+      <DependentUpon>Matrix1_4.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="OtherForms\Matrix2_1.xaml.cs">
+      <DependentUpon>Matrix2_1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="OtherForms\Matrix2_2.xaml.cs">
+      <DependentUpon>Matrix2_2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="OtherForms\Matrix2_3.xaml.cs">
+      <DependentUpon>Matrix2_3.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="OtherForms\Matrix2_4.xaml.cs">
+      <DependentUpon>Matrix2_4.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="OtherForms\Matrix3_1.xaml.cs">
+      <DependentUpon>Matrix3_1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="OtherForms\Matrix3_2.xaml.cs">
+      <DependentUpon>Matrix3_2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="OtherForms\Matrix3_3.xaml.cs">
+      <DependentUpon>Matrix3_3.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="OtherForms\Matrix3_4.xaml.cs">
+      <DependentUpon>Matrix3_4.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="OtherForms\Matrix4_1.xaml.cs">
+      <DependentUpon>Matrix4_1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="OtherForms\Matrix4_2.xaml.cs">
+      <DependentUpon>Matrix4_2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="OtherForms\Matrix4_3.xaml.cs">
+      <DependentUpon>Matrix4_3.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="OtherForms\Matrix4_4.xaml.cs">
+      <DependentUpon>Matrix4_4.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\PhysicalExchange.cs" />
+    <Compile Include="DBConnection\DBconnection.cs" />
+    <Compile Include="Linq\ChemicalElementLinq.cs" />
+    <Compile Include="Properties\MathExtensions.cs" />
+    <Compile Include="Utilities\Btn.cs" />
+    <Compile Include="Utilities\RelayCommand.cs" />
+    <Compile Include="Utilities\ViewModelBase.cs" />
+    <Compile Include="ViewModel\AppVM.cs" />
+    <Compile Include="ViewModel\BaseViewModel.cs" />
+    <Compile Include="ViewModel\CalculatorVM.cs" />
+    <Compile Include="ViewModel\ChemicalConstantVM.cs" />
+    <Compile Include="ViewModel\ChemicalElementVM.cs" />
+    <Compile Include="ViewModel\ChemicalEquationVM.cs" />
+    <Compile Include="ViewModel\ChemicalLawVM.cs" />
+    <Compile Include="ViewModel\Degree1VM.cs" />
+    <Compile Include="ViewModel\Degree2VM.cs" />
+    <Compile Include="ViewModel\Degree3VM.cs" />
+    <Compile Include="ViewModel\Degree4VM.cs" />
+    <Compile Include="ViewModel\HomeVM.cs" />
+    <Compile Include="ViewModel\IntegralVM.cs" />
+    <Compile Include="ViewModel\IntroductionVM.cs" />
+    <Compile Include="ViewModel\MathematicalFormulaVM.cs" />
+    <Compile Include="ViewModel\MathematicalTheoremVM.cs" />
+    <Compile Include="ViewModel\MatrixVM.cs" />
+    <Compile Include="ViewModel\NavigationVM.cs" />
+    <Compile Include="ViewModel\PhysicalConstantVM.cs" />
+    <Compile Include="ViewModel\PhysicalFormulaVM.cs" />
+    <Compile Include="ViewModel\PhysicalLawVM.cs" />
+    <Compile Include="ViewModel\PhysicalUnitsVM.cs" />
+    <Compile Include="ViewModel\RelayCommand.cs" />
+    <Compile Include="ViewModel\Step2VM.cs" />
+    <Compile Include="ViewModel\Step3VM.cs" />
+    <Compile Include="ViewModel\Step4VM.cs" />
+    <Compile Include="View\App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Calculator.xaml.cs">
+      <DependentUpon>Calculator.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\ChemicalConstant.xaml.cs">
+      <DependentUpon>ChemicalConstant.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\ChemicalElement.xaml.cs">
+      <DependentUpon>ChemicalElement.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\ChemicalEquation.xaml.cs">
+      <DependentUpon>ChemicalEquation.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\ChemicalLaw.xaml.cs">
+      <DependentUpon>ChemicalLaw.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Degree1.xaml.cs">
+      <DependentUpon>Degree1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Degree2.xaml.cs">
+      <DependentUpon>Degree2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Degree3.xaml.cs">
+      <DependentUpon>Degree3.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Degree4.xaml.cs">
+      <DependentUpon>Degree4.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Home.xaml.cs">
+      <DependentUpon>Home.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Integral.xaml.cs">
+      <DependentUpon>Integral.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Introduction.xaml.cs">
+      <DependentUpon>Introduction.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\MathematicalFormula.xaml.cs">
+      <DependentUpon>MathematicalFormula.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\MathematicalTheorem.xaml.cs">
+      <DependentUpon>MathematicalTheorem.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Matrix.xaml.cs">
+      <DependentUpon>Matrix.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\PhysicalConstant.xaml.cs">
+      <DependentUpon>PhysicalConstant.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\PhysicalFormula.xaml.cs">
+      <DependentUpon>PhysicalFormula.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\PhysicalLaw.xaml.cs">
+      <DependentUpon>PhysicalLaw.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\PhysicalUnits.xaml.cs">
+      <DependentUpon>PhysicalUnits.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Step2.xaml.cs">
+      <DependentUpon>Step2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Step3.xaml.cs">
+      <DependentUpon>Step3.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Step4.xaml.cs">
+      <DependentUpon>Step4.xaml</DependentUpon>
+    </Compile>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="OtherForms\Matrix1_1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="OtherForms\Matrix1_2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="OtherForms\Matrix1_3.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="OtherForms\Matrix1_4.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="OtherForms\Matrix2_1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="OtherForms\Matrix2_2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="OtherForms\Matrix2_3.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="OtherForms\Matrix2_4.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="OtherForms\Matrix3_1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="OtherForms\Matrix3_2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="OtherForms\Matrix3_3.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="OtherForms\Matrix3_4.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="OtherForms\Matrix4_1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="OtherForms\Matrix4_2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="OtherForms\Matrix4_3.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="OtherForms\Matrix4_4.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Styles\Button.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Styles\Image.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Styles\Page.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Styles\Templates.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Styles\Text.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Utilities\DataTemplate.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\Calculator.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\ChemicalConstant.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\ChemicalElement.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\ChemicalEquation.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\ChemicalLaw.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Degree1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Degree2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Degree3.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Degree4.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Home.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\Integral.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Introduction.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\MathematicalFormula.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\MathematicalTheorem.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Matrix.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\PhysicalConstant.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\PhysicalFormula.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\PhysicalLaw.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\PhysicalUnits.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Step2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Step3.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Step4.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Resource Include="Images\Introduction_Main.jpg" />
+    <Resource Include="Images\App.png" />
+    <Resource Include="Images\braces256_5.png" />
+    <Resource Include="Images\chemical_theorem.png" />
+    <Resource Include="Images\physical_unit.png" />
+    <Resource Include="Images\integral.png" />
+    <Resource Include="Images\matrix.png" />
+    <Resource Include="Images\1_equations.png" />
+    <Resource Include="Images\2_equations.png" />
+    <Resource Include="Images\3_equations.png" />
+    <Resource Include="Images\4_equations.png" />
+    <Resource Include="Images\4_equation.png" />
+    <Resource Include="Images\1_equation.png" />
+    <Resource Include="Images\2_equation.png" />
+    <Resource Include="Images\3_equation.png" />
+    <Resource Include="Images\Equation.png" />
+    <Resource Include="Images\Equations.png" />
+    <Resource Include="Images\mathematics.png" />
+    <Resource Include="Images\algebra.png" />
+    <Resource Include="Images\chalkboard.png" />
+    <Resource Include="Images\development.png" />
+    <Resource Include="Images\chemistry.png" />
+    <Resource Include="Images\science.png" />
+    <Resource Include="Images\helium.png" />
+    <Resource Include="Images\law-of-motion.png" />
+    <Resource Include="Images\physics.png" />
+    <Resource Include="Images\molecule.png" />
+    <Resource Include="Images\science-report.png" />
+    <Resource Include="Images\calculating.png" />
+    <Resource Include="Images\calculator.png" />
+    <Resource Include="Images\gravity.png" />
+    <Resource Include="Images\icons8-physic-64.png" />
+    <Resource Include="Images\pi-phy.png" />
+    <Resource Include="Images\icons8-math-50.png" />
+    <Resource Include="Images\icons8-math-51.png" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <Content Include="Fonts\Rubik-Medium.ttf" />
+    <Content Include="Fonts\Rubik-Regular.ttf" />
+    <Content Include="Fonts\FontAwesome.otf" />
+    <Content Include="Fonts\fontawesome-webfont.ttf" />
+    <Content Include="Fonts\fontawesome-webfont.eot" />
+    <Content Include="Fonts\fontawesome-webfont.woff" />
+    <Content Include="Fonts\fontawesome-webfont.woff2" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\customer_page.png" />
+    <Resource Include="Images\home_page.png" />
+    <Resource Include="Images\img_about.png" />
+    <Resource Include="Images\img_acoustic.png" />
+    <Resource Include="Images\img_album.png" />
+    <Resource Include="Images\img_app.png" />
+    <Resource Include="Images\img_arrow.png" />
+    <Resource Include="Images\img_artist.png" />
+    <Resource Include="Images\img_customer.png" />
+    <Resource Include="Images\img_electronic.png" />
+    <Resource Include="Images\img_exit.png" />
+    <Resource Include="Images\img_folder.png" />
+    <Resource Include="Images\img_genre.png" />
+    <Resource Include="Images\img_hiphop.png" />
+    <Resource Include="Images\img_history.png" />
+    <Resource Include="Images\img_home.png" />
+    <Resource Include="Images\img_home8.png" />
+    <Resource Include="Images\img_hotkey.png" />
+    <Resource Include="Images\img_input.png" />
+    <Resource Include="Images\img_jazz.png" />
+    <Resource Include="Images\img_metal.png" />
+    <Resource Include="Images\img_movies.png" />
+    <Resource Include="Images\img_music.png" />
+    <Resource Include="Images\img_order.png" />
+    <Resource Include="Images\img_playlist.png" />
+    <Resource Include="Images\img_pop.png" />
+    <Resource Include="Images\img_product.png" />
+    <Resource Include="Images\img_rock.png" />
+    <Resource Include="Images\img_search.png" />
+    <Resource Include="Images\img_setting.png" />
+    <Resource Include="Images\img_shipment.png" />
+    <Resource Include="Images\img_songs.png" />
+    <Resource Include="Images\img_transaction.png" />
+    <Resource Include="Images\max_def.png" />
+    <Resource Include="Images\max_mo.png" />
+    <Resource Include="Images\order_page.png" />
+    <Resource Include="Images\product_page.png" />
+    <Resource Include="Images\setting_page.png" />
+    <Resource Include="Images\shipment_page.png" />
+    <Resource Include="Images\shutdown_def.png" />
+    <Resource Include="Images\shutdown_mo.png" />
+    <Resource Include="Images\transaction_page.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\font-awesome.css" />
+    <Content Include="Content\font-awesome.min.css" />
+    <Content Include="Fonts\fontawesome-webfont.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('packages\EntityFramework.6.4.4\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\EntityFramework.6.4.4\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('packages\EntityFramework.6.4.4\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\EntityFramework.6.4.4\build\EntityFramework.targets'))" />
+    <Error Condition="!Exists('packages\MaterialDesignThemes.4.9.0\build\MaterialDesignThemes.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\MaterialDesignThemes.4.9.0\build\MaterialDesignThemes.targets'))" />
+  </Target>
+  <Import Project="packages\EntityFramework.6.4.4\build\EntityFramework.targets" Condition="Exists('packages\EntityFramework.6.4.4\build\EntityFramework.targets')" />
+  <Import Project="packages\MaterialDesignThemes.4.9.0\build\MaterialDesignThemes.targets" Condition="Exists('packages\MaterialDesignThemes.4.9.0\build\MaterialDesignThemes.targets')" />
+</Project>

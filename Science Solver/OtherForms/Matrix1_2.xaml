@@ -1,0 +1,132 @@
+﻿<Window
+    x:Class="Science_Solver.OtherForms.Matrix1_2"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:Menu="clr-namespace:Science_Solver.Utilities"
+    xmlns:View="clr-namespace:Science_Solver.View"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:fa="http://schemas.fontawesome.io/icons/"
+    xmlns:local="clr-namespace:Science_Solver"
+    xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:vm="clr-namespace:Science_Solver.ViewModel"
+    Title="MainWindow"
+    Width="600"
+    Height="200"
+    AllowsTransparency="True"
+    Background="Transparent"
+    Icon="/Images/science-report.png"
+    WindowStartupLocation="CenterScreen"
+    WindowStyle="None"
+    mc:Ignorable="d">
+    <Grid>
+        <Border
+            Padding="5"
+            Background="#37474f"
+            CornerRadius="40">
+            <Grid>
+                <StackPanel Orientation="Vertical">
+                    <Border
+                        Grid.Row="0"
+                        Margin="0"
+                        Padding="0"
+                        Background="#37474f"
+                        CornerRadius="20 20 0 0">
+                        <StackPanel Orientation="Horizontal">
+                            <Border Width="50" Height="50">
+                                <fa:ImageAwesome
+                                    Margin="20,0,0,0"
+                                    Foreground="AliceBlue"
+                                    Icon="BellOutline" />
+                            </Border>
+                            <Label
+                                Margin="10,0,0,0"
+                                VerticalAlignment="Center"
+                                Content="Matrix 1x2"
+                                FontSize="30"
+                                Foreground="#fff" />
+                        </StackPanel>
+                    </Border>
+                    <Grid Margin="0,0,0,0">
+                        <StackPanel Orientation="Vertical">
+                            <Border Height="60">
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="100" />
+                                        <ColumnDefinition Width="160" />
+                                        <ColumnDefinition Width="100" />
+                                        <ColumnDefinition Width="160" />
+                                    </Grid.ColumnDefinitions>
+                                    <Border Grid.Column="0" Margin="0">
+                                        <Label
+                                            Margin="10,0,0,0"
+                                            HorizontalAlignment="Left"
+                                            VerticalAlignment="Center"
+                                            Content="matrix [0,0]"
+                                            FontSize="14"
+                                            FontStretch="ExtraCondensed"
+                                            FontStyle="Normal"
+                                            FontWeight="SemiBold"
+                                            Foreground="#ffee58" />
+                                    </Border>
+                                    <Border Grid.Column="1" Margin="0">
+                                        <TextBox
+                                            Name="value0_0"
+                                            Margin="0,0,5,0"
+                                            VerticalAlignment="Center"
+                                            materialDesign:HintAssist.HelperText="5"
+                                            materialDesign:HintAssist.Hint="number"
+                                            BorderBrush="#efebe9"
+                                            Foreground="#fafafa"
+                                            Style="{StaticResource MaterialDesignOutlinedTextBox}" />
+                                    </Border>
+                                    <Border Grid.Column="2" Margin="0">
+                                        <Label
+                                            Margin="10,0,0,0"
+                                            HorizontalAlignment="Left"
+                                            VerticalAlignment="Center"
+                                            Content="matrix [0,1]"
+                                            FontSize="14"
+                                            FontStretch="ExtraCondensed"
+                                            FontStyle="Normal"
+                                            FontWeight="SemiBold"
+                                            Foreground="#ffee58" />
+                                    </Border>
+                                    <Border Grid.Column="3" Margin="0">
+                                        <TextBox
+                                            Name="value0_1"
+                                            Margin="0,0,5,0"
+                                            VerticalAlignment="Center"
+                                            materialDesign:HintAssist.HelperText="5"
+                                            materialDesign:HintAssist.Hint="number"
+                                            BorderBrush="#efebe9"
+                                            Foreground="#fafafa"
+                                            Style="{StaticResource MaterialDesignOutlinedTextBox}" />
+                                    </Border>
+                                </Grid>
+                            </Border>
+                        </StackPanel>
+                    </Grid>
+                    <Grid>
+                        <Button
+                            Width="500"
+                            Margin="0,20,0,0"
+                            HorizontalAlignment="Center"
+                            VerticalAlignment="Bottom"
+                            Background="#37474f"
+                            Click="Save_Click"
+                            Content="Save"
+                            Foreground="#f5f5f5"
+                            IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}"
+                            Style="{StaticResource MaterialDesignPaperSecondaryButton}"
+                            ToolTip="Resource name: MaterialDesignPaperSecondaryButton" />
+                    </Grid>
+                </StackPanel>
+            </Grid>
+        </Border>
+        <Button
+            x:Name="CloseApp"
+            Click="CloseApp_Click"
+            Style="{StaticResource ExitApp}" />
+    </Grid>
+</Window>

@@ -1,0 +1,182 @@
+﻿<UserControl x:Class="Science_Solver.View.Degree1"
+            xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+            xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+            xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+            xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+            xmlns:vm="clr-namespace:Science_Solver.ViewModel"        
+            xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+            xmlns:fa="http://schemas.fontawesome.io/icons/"
+            mc:Ignorable="d" 
+            d:DesignHeight="600" 
+            d:DesignWidth="622"
+            Background="Transparent"
+            FontFamily="/Fonts/#Rubik Medium"
+            >
+    <Grid>
+        <Border Margin="0 0 0 0 ">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="320"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Border Grid.Row="0"
+                        Background="#37474f"
+                        Margin="0"
+                        CornerRadius="20 20 0 0"
+                        Padding="0">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="260"/>
+                            <RowDefinition Height="50"/>
+                        </Grid.RowDefinitions>
+                        <Grid Grid.Row="0" Margin="0 40 0 0">
+                            <StackPanel>
+                                <Border Height="60" Margin="0 10 0 0">
+                                    <StackPanel Orientation="Horizontal">
+                                        <Border Width="60" Height="60">
+                                            <fa:ImageAwesome Icon="Anchor"
+                                                         Foreground="AliceBlue"
+                                                         Margin="20 0 0 0"
+                                                         />
+                                        </Border>
+                                        <Label Content="Linear equation"
+                                               Foreground="#fff"
+                                               VerticalAlignment="Center"
+                                               FontSize="30"
+                                               Margin="10 0 0 0"/>
+                                        <Label Content="( ax + b = 0)"
+                                               Foreground="#fff"
+                                               VerticalAlignment="Center"
+                                               FontSize="25"
+                                               Margin="5 0 0 0"/>
+                                    </StackPanel>
+                                </Border>
+                                <Border Height="60" Margin="0 0 0 0 ">
+                                    <Grid>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="280"/>
+                                            <ColumnDefinition Width="*"/>
+                                        </Grid.ColumnDefinitions>
+                                        <Border Grid.Column="0" Margin="0">
+                                            <Label Content=" Parameter A: "
+                                                    HorizontalAlignment="Left"
+                                                    Margin="80 0 0 0 "
+                                                    VerticalAlignment="Center"
+                                                    Foreground="#ffee58"
+                                                    FontStretch="Condensed"
+                                                    FontStyle="Normal"
+                                                    FontWeight="ExtraLight"
+                                                    FontSize="18">
+                                            </Label>
+                                        </Border>
+                                        <Border Grid.Column="1"
+                                                Margin=" 0 0 80 0">
+                                            <TextBox Name="IndexA"
+                                                     Foreground="#fafafa"
+                                                     VerticalAlignment="Center"
+                                                     Margin="0 0 5 0"
+                                                     BorderBrush="#efebe9"
+                                                     materialDesign:HintAssist.HelperText="0, 1 ,2, 3..."
+                                                     materialDesign:HintAssist.Hint="Number"
+                                                     Text="{Binding IndexA}"
+                                                     Style="{StaticResource MaterialDesignOutlinedTextBox}">
+
+                                            </TextBox>
+                                        </Border>
+                                    </Grid>
+                                </Border>
+                                <Border Height="60" Margin="0 20 0 0 ">
+                                    <Grid>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="280"/>
+                                            <ColumnDefinition Width="*"/>
+                                        </Grid.ColumnDefinitions>
+                                        <Border Grid.Column="0" Margin="0">
+                                            <Label Content=" Parameter B: "
+                                                    HorizontalAlignment="Left"
+                                                    Margin="80 0 0 0 "
+                                                    VerticalAlignment="Center"
+                                                    Foreground="#80e27e"
+                                                    FontStretch="Condensed"
+                                                    FontStyle="Normal"
+                                                    FontWeight="ExtraLight"
+                                                    FontSize="18">
+                                            </Label>
+                                        </Border>
+                                        <Border Grid.Column="1"
+                                                    Margin=" 0 0 80 0">
+                                            <TextBox Name="IndexB"
+                                                     Foreground="#fafafa"
+                                                     VerticalAlignment="Center"
+                                                     Margin="0 0 5 0"
+                                                     BorderBrush="#efebe9"
+                                                     materialDesign:HintAssist.HelperText="0, 1 ,2, 3..."
+                                                     materialDesign:HintAssist.Hint="Number"
+                                                     Text="{Binding IndexB}"
+                                                     Style="{StaticResource MaterialDesignOutlinedTextBox}">
+                                            </TextBox>
+                                        </Border>
+                                    </Grid>
+                                </Border>
+                            </StackPanel>
+                        </Grid>
+                        <Border Grid.Row="1" Margin="0 0 0 0">
+                            <Button Margin="0 0 0 0"
+                                    VerticalAlignment="Center"
+                                    HorizontalAlignment="Center"
+                                    Width="450"
+                                    Content="Solve Equation"
+                                    Background="#37474f"
+                                    Foreground="#80cbc4"
+                                    BorderBrush="#fff176"
+                                    IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}"
+                                    Style="{StaticResource MaterialDesignPaperSecondaryButton}"
+                                    ToolTip="Resource name: MaterialDesignPaperSecondaryButton"
+                                    Command="{Binding SolveCommand}">
+                            </Button>
+                        </Border>
+                    </Grid>
+                </Border>
+                <Border Grid.Row="1" 
+                        CornerRadius=" 0 0 20 20"
+                        Background="#37474f"
+                        Padding="10 0 10 10">
+                    <GroupBox materialDesign:ColorZoneAssist.Mode="Custom"
+                              materialDesign:ColorZoneAssist.Background="#374740"
+                              materialDesign:ColorZoneAssist.Foreground="White"
+                              Style="{StaticResource MaterialDesignCardGroupBox}"
+                              Header="Result of linear equation">
+                        <GroupBox.HeaderTemplate >
+                            <DataTemplate>
+                                <StackPanel Orientation="Horizontal">
+                                    <materialDesign:PackIcon
+                                                  Width="30"
+                                                  Height="30"
+                                                  VerticalAlignment="Center"
+                                                  Kind="QuestionAnswer"/>       
+                                    <TextBlock
+                                              Margin="8,0,0,0"
+                                              VerticalAlignment="Center"
+                                              Style="{StaticResource MaterialDesignSubtitle1TextBlock}"
+                                              Text="Result of linear equation" />
+                                </StackPanel>
+                            </DataTemplate>
+                        </GroupBox.HeaderTemplate>
+                        <RichTextBox HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                            <FlowDocument>
+                                <Paragraph FontSize="14">
+                                    <Run FontWeight="Bold" Foreground="#000" Text="{Binding Equation}"></Run>
+                                    <LineBreak />
+                                    <Run FontStyle="Oblique" Foreground="#090909" Text="Result: "></Run>
+                                    <LineBreak />
+                                    <Run FontStyle="Oblique" Foreground="#090909" Text="{Binding Variable1}"></Run>
+                                </Paragraph>
+                            </FlowDocument>
+                        </RichTextBox>
+                    </GroupBox>
+
+                </Border>
+            </Grid>
+        </Border>
+    </Grid>
+</UserControl>

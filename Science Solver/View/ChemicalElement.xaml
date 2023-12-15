@@ -1,0 +1,467 @@
+﻿<UserControl
+    x:Class="Science_Solver.View.ChemicalElement"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:fa="http://schemas.fontawesome.io/icons/"
+    xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:vm="clr-namespace:Science_Solver.ViewModel"
+    d:DesignHeight="600"
+    d:DesignWidth="622"
+    Background="Transparent"
+    FontFamily="/Fonts/#Rubik Medium"
+    mc:Ignorable="d">
+    <Grid>
+        <Border Margin="0,0,0,0">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="250" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <Border
+                    Grid.Row="0"
+                    Margin="0"
+                    Padding="0"
+                    Background="#37474f"
+                    CornerRadius="0 20 0 0">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="480" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <Border
+                            Grid.Column="0"
+                            Margin="0"
+                            Padding="0"
+                            Background="#37474f"
+                            CornerRadius="20 0 0 0">
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="200" />
+                                    <RowDefinition Height="*" />
+                                </Grid.RowDefinitions>
+                                <!--  Searching Tag  -->
+                                <Grid Grid.Row="0" Margin="0,40,0,0">
+                                    <StackPanel>
+                                        <Border Height="60">
+                                            <Grid>
+                                                <Grid.ColumnDefinitions>
+                                                    <ColumnDefinition Width="220" />
+                                                    <ColumnDefinition Width="200" />
+                                                    <ColumnDefinition Width="*" />
+                                                </Grid.ColumnDefinitions>
+                                                <Border Grid.Column="0" Margin="0">
+                                                    <Label
+                                                        Margin="20,0,0,0"
+                                                        HorizontalAlignment="Left"
+                                                        VerticalAlignment="Center"
+                                                        Content="Number of Element"
+                                                        FontSize="14"
+                                                        FontStretch="Condensed"
+                                                        FontStyle="Normal"
+                                                        FontWeight="ExtraLight"
+                                                        Foreground="#ffee58" />
+                                                </Border>
+                                                <Border Grid.Column="1" Margin="0">
+                                                    <TextBox
+                                                        Name="Number"
+                                                        Margin="0,0,5,0"
+                                                        VerticalAlignment="Center"
+                                                        materialDesign:HintAssist.HelperText="1, 2, 3...."
+                                                        materialDesign:HintAssist.Hint="Numberic"
+                                                        BorderBrush="#efebe9"
+                                                        Foreground="#fafafa"
+                                                        Style="{StaticResource MaterialDesignOutlinedTextBox}"
+                                                        Text="{Binding Number, UpdateSourceTrigger=PropertyChanged}" />
+                                                </Border>
+                                                <Button
+                                                    Grid.Column="2"
+                                                    Margin="5,0,10,0"
+                                                    Padding="0"
+                                                    HorizontalAlignment="Left"
+                                                    VerticalAlignment="Center"
+                                                    Background="#37474f"
+                                                    BorderBrush="#f5f5f5"
+                                                    Command="{Binding FindoutElementByNumber}"
+                                                    Cursor="Hand"
+                                                    IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}"
+                                                    Style="{StaticResource MaterialDesignFloatingActionMiniSecondaryButton}"
+                                                    ToolTip="MaterialDesignFloatingActionMiniSecondaryButton">
+                                                    <fa:ImageAwesome
+                                                        Width="20"
+                                                        Height="20"
+                                                        Foreground="#f2f2f2f2"
+                                                        Icon="Search" />
+                                                </Button>
+                                            </Grid>
+                                        </Border>
+                                        <Border Height="60" Margin="0,20,0,0">
+                                            <Grid>
+                                                <Grid.ColumnDefinitions>
+                                                    <ColumnDefinition Width="220" />
+                                                    <ColumnDefinition Width="200" />
+                                                    <ColumnDefinition Width="*" />
+                                                </Grid.ColumnDefinitions>
+                                                <Border Grid.Column="0" Margin="0">
+                                                    <Label
+                                                        Margin="20,0,0,0"
+                                                        HorizontalAlignment="Left"
+                                                        VerticalAlignment="Center"
+                                                        Content="Name of Element (Symbol)"
+                                                        FontSize="14"
+                                                        FontStretch="Condensed"
+                                                        FontStyle="Normal"
+                                                        FontWeight="ExtraLight"
+                                                        Foreground="#aed581" />
+                                                </Border>
+                                                <Border Grid.Column="1" Margin="0">
+                                                    <TextBox
+                                                        x:Name="NameAndSymbol"
+                                                        Margin="0,0,5,0"
+                                                        VerticalAlignment="Center"
+                                                        materialDesign:HintAssist.HelperText="Hydrogen, Helium,..."
+                                                        materialDesign:HintAssist.Hint="Named"
+                                                        BorderBrush="#efebe9"
+                                                        Foreground="#fafafa"
+                                                        Style="{StaticResource MaterialDesignOutlinedTextBox}"
+                                                        Text="{Binding NameAndSymbol, UpdateSourceTrigger=PropertyChanged}" />
+                                                </Border>
+                                                <Button
+                                                    Grid.Column="2"
+                                                    Margin="5,0,10,0"
+                                                    Padding="0"
+                                                    HorizontalAlignment="Left"
+                                                    VerticalAlignment="Center"
+                                                    Background="#37474f"
+                                                    BorderBrush="#f5f5f5"
+                                                    Command="{Binding FindoutElementByNameAndSymbol}"
+                                                    Cursor="Hand"
+                                                    IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}"
+                                                    Style="{StaticResource MaterialDesignFloatingActionMiniSecondaryButton}"
+                                                    ToolTip="MaterialDesignFloatingActionMiniSecondaryButton">
+                                                    <fa:ImageAwesome
+                                                        Width="20"
+                                                        Height="20"
+                                                        Foreground="#f2f2f2f2"
+                                                        Icon="SearchPlus" />
+                                                </Button>
+                                            </Grid>
+                                        </Border>
+                                    </StackPanel>
+                                </Grid>
+                                <!--  Button  -->
+                                <!--  Control Searching Chemistry elements  -->
+                                <Border Grid.Row="1" Margin="0,0,0,0">
+                                    <Button
+                                        Width="400"
+                                        Margin="0,0,0,0"
+                                        HorizontalAlignment="Center"
+                                        VerticalAlignment="Center"
+                                        Background="#37474f"
+                                        Command="{Binding AllElementCommand}"
+                                        Content="All element"
+                                        Foreground="#f5f5f5"
+                                        IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}"
+                                        Style="{StaticResource MaterialDesignPaperSecondaryButton}"
+                                        ToolTip="Resource name: MaterialDesignPaperSecondaryButton" />
+                                </Border>
+                            </Grid>
+                        </Border>
+                        <Border
+                            Grid.Column="1"
+                            Background="#37474f"
+                            CornerRadius="0 20 0 0">
+                            <materialDesign:Card
+                                Margin="15,55,15,10"
+                                Background="#5c6d75"
+                                Cursor="IBeam">
+                                <Grid>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="40" />
+                                        <RowDefinition Height="*" />
+                                    </Grid.RowDefinitions>
+                                    <Grid Grid.Row="0">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="42" />
+                                            <ColumnDefinition />
+                                        </Grid.ColumnDefinitions>
+                                        <!--  Content="{Binding NumberEle}"  -->
+                                        <Label
+                                            x:Name="NumberElement"
+                                            HorizontalAlignment="Center"
+                                            VerticalAlignment="Center"
+                                            Content="{Binding NumberEle}"
+                                            FontSize="18"
+                                            FontStretch="ExtraCondensed"
+                                            FontWeight="Bold"
+                                            Foreground="White">
+                                            <Label.Triggers>
+                                                <!--  Trigger để thay đổi màu khi con trỏ chuột rê vào  -->
+                                                <EventTrigger RoutedEvent="MouseEnter">
+                                                    <BeginStoryboard>
+                                                        <Storyboard>
+                                                            <ColorAnimation
+                                                                Storyboard.TargetProperty="Foreground.Color"
+                                                                To="#c2311b"
+                                                                Duration="0:0:0.05" />
+                                                        </Storyboard>
+                                                    </BeginStoryboard>
+                                                </EventTrigger>
+
+                                                <!--  Trigger để thay đổi màu khi con trỏ chuột rê ra  -->
+                                                <EventTrigger RoutedEvent="MouseLeave">
+                                                    <BeginStoryboard>
+                                                        <Storyboard>
+                                                            <ColorAnimation
+                                                                Storyboard.TargetProperty="Foreground.Color"
+                                                                To="White"
+                                                                Duration="0:0:0.05" />
+                                                        </Storyboard>
+                                                    </BeginStoryboard>
+                                                </EventTrigger>
+                                            </Label.Triggers>
+
+                                        </Label>
+                                        <!--  Content="{Binding AtomicMassEle}"  -->
+                                        <Label
+                                            x:Name="AtomicMassEle"
+                                            Grid.Column="1"
+                                            HorizontalAlignment="Center"
+                                            VerticalAlignment="Center"
+                                            Content="{Binding AtomicMassEle}"
+                                            FontSize="14"
+                                            FontStretch="SemiCondensed"
+                                            FontWeight="SemiBold"
+                                            Foreground="#212121">
+                                            <Label.Triggers>
+                                                <!--  Trigger để thay đổi màu khi con trỏ chuột rê vào  -->
+                                                <EventTrigger RoutedEvent="MouseEnter">
+                                                    <BeginStoryboard>
+                                                        <Storyboard>
+                                                            <ColorAnimation
+                                                                Storyboard.TargetProperty="Foreground.Color"
+                                                                To="#c2311b"
+                                                                Duration="0:0:0.05" />
+                                                        </Storyboard>
+                                                    </BeginStoryboard>
+                                                </EventTrigger>
+
+                                                <!--  Trigger để thay đổi màu khi con trỏ chuột rê ra  -->
+                                                <EventTrigger RoutedEvent="MouseLeave">
+                                                    <BeginStoryboard>
+                                                        <Storyboard>
+                                                            <ColorAnimation
+                                                                Storyboard.TargetProperty="Foreground.Color"
+                                                                To="#212121"
+                                                                Duration="0:0:0.05" />
+                                                        </Storyboard>
+                                                    </BeginStoryboard>
+                                                </EventTrigger>
+                                            </Label.Triggers>
+                                        </Label>
+
+                                    </Grid>
+                                    <Grid Grid.Row="1">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="51*" />
+                                            <ColumnDefinition Width="61*" />
+                                        </Grid.ColumnDefinitions>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="100" />
+                                            <RowDefinition Height="*" />
+                                        </Grid.RowDefinitions>
+                                        <Label
+                                            x:Name="SymbolEle"
+                                            Grid.Row="0"
+                                            Grid.ColumnSpan="2"
+                                            HorizontalContentAlignment="Center"
+                                            VerticalContentAlignment="Center"
+                                            Content="{Binding SymbolEle}"
+                                            FontSize="40"
+                                            FontStretch="UltraCondensed"
+                                            FontWeight="Bold"
+                                            Foreground="#fff">
+                                            <Label.Triggers>
+                                                <!--  Trigger để thay đổi màu khi con trỏ chuột rê vào  -->
+                                                <EventTrigger RoutedEvent="MouseEnter">
+                                                    <BeginStoryboard>
+                                                        <Storyboard>
+                                                            <ColorAnimation
+                                                                Storyboard.TargetProperty="Foreground.Color"
+                                                                To="#ffff5a"
+                                                                Duration="0:0:0.05" />
+                                                        </Storyboard>
+                                                    </BeginStoryboard>
+                                                </EventTrigger>
+
+                                                <!--  Trigger để thay đổi màu khi con trỏ chuột rê ra  -->
+                                                <EventTrigger RoutedEvent="MouseLeave">
+                                                    <BeginStoryboard>
+                                                        <Storyboard>
+                                                            <ColorAnimation
+                                                                Storyboard.TargetProperty="Foreground.Color"
+                                                                To="#fff"
+                                                                Duration="0:0:0.05" />
+                                                        </Storyboard>
+                                                    </BeginStoryboard>
+                                                </EventTrigger>
+                                            </Label.Triggers>
+                                        </Label>
+                                        <Label
+                                            x:Name="NameEle"
+                                            Grid.Row="1"
+                                            Grid.ColumnSpan="2"
+                                            HorizontalContentAlignment="Center"
+                                            VerticalContentAlignment="Center"
+                                            Content="{Binding NameEle}"
+                                            FontSize="18"
+                                            FontStretch="Condensed"
+                                            FontWeight="ExtraBold"
+                                            Foreground="#e0e0e0">
+                                            <Label.Triggers>
+                                                <!--  Trigger để thay đổi màu khi con trỏ chuột rê vào  -->
+                                                <EventTrigger RoutedEvent="MouseEnter">
+                                                    <BeginStoryboard>
+                                                        <Storyboard>
+                                                            <ColorAnimation
+                                                                Storyboard.TargetProperty="Foreground.Color"
+                                                                To="#ff6430"
+                                                                Duration="0:0:0.05" />
+                                                        </Storyboard>
+                                                    </BeginStoryboard>
+                                                </EventTrigger>
+
+                                                <!--  Trigger để thay đổi màu khi con trỏ chuột rê ra  -->
+                                                <EventTrigger RoutedEvent="MouseLeave">
+                                                    <BeginStoryboard>
+                                                        <Storyboard>
+                                                            <ColorAnimation
+                                                                Storyboard.TargetProperty="Foreground.Color"
+                                                                To="#e0e0e0"
+                                                                Duration="0:0:0.05" />
+                                                        </Storyboard>
+                                                    </BeginStoryboard>
+                                                </EventTrigger>
+                                            </Label.Triggers>
+                                        </Label>
+                                    </Grid>
+                                </Grid>
+
+                            </materialDesign:Card>
+                        </Border>
+                    </Grid>
+                </Border>
+                <Border
+                    Grid.Row="1"
+                    Padding="2,5,2,5"
+                    Background="#37474f"
+                    CornerRadius=" 0 0 10 10">
+                    <DataGrid
+                        x:Name="dtgChemicalElements"
+                        AutoGenerateColumns="False"
+                        Background="#455a64"
+                        FontSize="11px"
+                        ItemsSource="{Binding dtChemicalElements}">
+                        <DataGrid.ColumnHeaderStyle>
+                            <Style TargetType="DataGridColumnHeader">
+                                <Setter Property="Foreground" Value="#fafafa" />
+                                <Setter Property="Background" Value="#465a69" />
+                                <Setter Property="FontSize" Value="13" />
+                                <Setter Property="Margin" Value="5,10,5,5" />
+                                <Setter Property="Padding" Value="5,0,0,0" />
+                                <Setter Property="FontWeight" Value="DemiBold" />
+                                <Setter Property="HorizontalContentAlignment" Value="Center" />
+                                <Setter Property="Cursor" Value="Hand" />
+                                <Style.Triggers>
+                                    <Trigger Property="IsMouseOver" Value="True">
+                                        <Setter Property="Foreground" Value="#ffd54f" />
+                                        <Setter Property="FontWeight" Value="ExtraBold" />
+                                    </Trigger>
+
+                                    <Trigger Property="IsMouseOver" Value="false">
+                                        <Setter Property="Foreground" Value="#fafafa" />
+                                        <Setter Property="Background" Value="#465a69" />
+                                        <Setter Property="Margin" Value="5,10,5,5" />
+                                        <Setter Property="Padding" Value="5,0,0,0" />
+                                        <Setter Property="FontWeight" Value="DemiBold" />
+                                    </Trigger>
+
+                                </Style.Triggers>
+
+
+                                <!--  Đổi màu chữ ở đây  -->
+                            </Style>
+                        </DataGrid.ColumnHeaderStyle>
+                        <!--  Đổi kích thước font của các hàng ở đây  -->
+                        <DataGrid.CellStyle>
+                            <Style TargetType="DataGridCell">
+                                <Setter Property="FontSize" Value="11" />
+                                <Setter Property="Foreground" Value="#fff176" />
+                                <Setter Property="Cursor" Value="IBeam" />
+                                <Setter Property="HorizontalAlignment" Value="Center" />
+                                <Setter Property="VerticalAlignment" Value="Center" />
+                                <Style.Triggers>
+                                    <Trigger Property="IsMouseOver" Value="True">
+                                        <Setter Property="Foreground" Value="#f7f6f7" />
+                                        <Setter Property="FontSize" Value="13" />
+                                    </Trigger>
+                                    <Trigger Property="IsMouseOver" Value="False">
+                                        <Setter Property="Foreground" Value="#fff176" />
+                                        <Setter Property="FontSize" Value="11" />
+
+                                    </Trigger>
+                                </Style.Triggers>
+                            </Style>
+                        </DataGrid.CellStyle>
+
+                        <DataGrid.Columns>
+                            <materialDesign:DataGridTextColumn
+                                Binding="{Binding Number}"
+                                EditingElementStyle="{StaticResource MaterialDesignDataGridTextColumnPopupEditingStyle}"
+                                ElementStyle="{StaticResource MaterialDesignDataGridTextColumnStyle}"
+                                Header="Number" />
+                            <materialDesign:DataGridTextColumn
+                                Binding="{Binding Symbol}"
+                                EditingElementStyle="{StaticResource MaterialDesignDataGridTextColumnPopupEditingStyle}"
+                                ElementStyle="{StaticResource MaterialDesignDataGridTextColumnStyle}"
+                                Header="Symbol" />
+                            <materialDesign:DataGridTextColumn
+                                Binding="{Binding Name}"
+                                EditingElementStyle="{StaticResource MaterialDesignDataGridTextColumnPopupEditingStyle}"
+                                ElementStyle="{StaticResource MaterialDesignDataGridTextColumnStyle}"
+                                Header="Name" />
+                            <materialDesign:DataGridTextColumn
+                                Binding="{Binding AtomicMass}"
+                                EditingElementStyle="{StaticResource MaterialDesignDataGridTextColumnPopupEditingStyle}"
+                                ElementStyle="{StaticResource MaterialDesignDataGridTextColumnStyle}"
+                                Header="AtomicMass" />
+                            <materialDesign:DataGridTextColumn
+                                Binding="{Binding Configuration}"
+                                EditingElementStyle="{StaticResource MaterialDesignDataGridTextColumnPopupEditingStyle}"
+                                ElementStyle="{StaticResource MaterialDesignDataGridTextColumnStyle}"
+                                Header="Configuration" />
+
+                            <materialDesign:DataGridTextColumn
+                                Binding="{Binding Electronegativity}"
+                                EditingElementStyle="{StaticResource MaterialDesignDataGridTextColumnPopupEditingStyle}"
+                                ElementStyle="{StaticResource MaterialDesignDataGridTextColumnStyle}"
+                                Header="Electronegativity" />
+
+                            <materialDesign:DataGridTextColumn
+                                Binding="{Binding Oxidation}"
+                                EditingElementStyle="{StaticResource MaterialDesignDataGridTextColumnPopupEditingStyle}"
+                                ElementStyle="{StaticResource MaterialDesignDataGridTextColumnStyle}"
+                                Header="Oxidation" />
+
+
+                        </DataGrid.Columns>
+
+                    </DataGrid>
+
+                </Border>
+            </Grid>
+        </Border>
+    </Grid>
+</UserControl>
+
